@@ -1,0 +1,15 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "20:14:10 07/17/2008 "
+* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\inverter\inv.sp "
+* "runtitle" "* inverter subcircuit"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   0.            
++ supply = 900.0000m       
+***   END: Saved Operating Point ***                     

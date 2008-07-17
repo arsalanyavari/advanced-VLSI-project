@@ -1,7 +1,7 @@
 * XOR gate subcircuit
 
 .include ../45nm_MGK.pm
-.include ../inverter/inv.sp
+.include ../../assets/spice_code/inv.sp
 
 .SUBCKT XOR2 in1 in2 out supply ground
 Xinv1 in1 in1_n supply ground INV

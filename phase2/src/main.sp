@@ -1,7 +1,14 @@
 * Top-level Ripple Carry Adder
 
 .include 45nm_MGK.pm
-.include full_adder/fa.sp
+.include ../assets/spice_code/inv.sp
+.include ../assets/spice_code/nand.sp
+.include ../assets/spice_code/nor.sp
+.include ../assets/spice_code/xor.sp
+.include ../assets/spice_code/and.sp
+.include ../assets/spice_code/or.sp
+.include ../assets/spice_code/fa.sp
+
 
 Vvdd fonte gnd 0.9V
 Xfulladder1 0 a0 b0 cout1 sum1 fonte gnd FA

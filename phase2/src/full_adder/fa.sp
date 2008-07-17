@@ -1,9 +1,9 @@
 * Full Adder subcircuit
 
 .include ../45nm_MGK.pm
-.include ../xor/xor.sp
-.include ../and/and.sp
-.include ../or/or.sp
+.include ../../assets/spice_code/xor.sp
+.include ../../assets/spice_code/and.sp
+.include ../../assets/spice_code/or.sp
 
 .SUBCKT FA cin in1 in2 cout soma supply ground
 Xxor1 in1 in2 in1xorin2 supply ground XOR2

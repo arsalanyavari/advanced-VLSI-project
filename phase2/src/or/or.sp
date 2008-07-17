@@ -1,8 +1,8 @@
 * OR gate subcircuit
 
 .include ../45nm_MGK.pm
-.include ../nor/nor.sp
-.include ../inverter/inv.sp
+.include ../../assets/spice_code/inv.sp
+.include ../../assets/spice_code/nor.sp
 
 .SUBCKT OR2 in1 in2 out supply ground
 Xnor1 in1 in2 nodo1 supply ground NOR2

@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
+.TITLE '* top-level ripple carry adder'
+ critico          temper           alter#            
+  1.642e-10         25.0000           1.0000         
