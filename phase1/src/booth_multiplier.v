@@ -4,12 +4,7 @@ module booth_multiplier (
     input wire [3:0] multiplicand,
     input wire [3:0] multiplier,
     output reg [7:0] product,
-    output reg done,
-    output reg [3:0] A_out,
-    output reg [3:0] M_out,
-    output reg [3:0] Q_out,
-    output reg Q_1_out,
-    output reg [3:0] tempA
+    output reg done
 
 );
 reg [3:0] A;
@@ -31,7 +26,6 @@ always @(posedge clk or posedge reset) begin
         product = 8'b0;
     end else if (count > 0) begin
         temp =  {Q[0], Q_1};
-        tempA = A;
         case (temp)
             2'b01: A = A + M;
             2'b10: A = A - M;
@@ -39,16 +33,10 @@ always @(posedge clk or posedge reset) begin
         endcase
 
     // Arithmetic right shift
-        //{A, Q, Q_1} = {A[3], A, Q[3:1], Q[0]};
-
         A_0_temp = A[0]; 
         A = {A[3], A[3:1]};
         Q_1 = Q[0];
         Q = {A_0_temp, Q[3:1]};
-
-        A_out = A;
-        Q_out = Q;
-        Q_1 = Q_1;
 
         count = count - 1;
         product = {A[3:0], Q[3:0]};

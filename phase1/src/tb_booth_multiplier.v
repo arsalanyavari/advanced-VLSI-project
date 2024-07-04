@@ -5,11 +5,6 @@ module tb_booth_multiplier;
     reg [3:0] multiplier;
     wire [7:0] product;
     wire done;
-    wire [3:0] M_out;
-    wire [3:0] A_out;
-    wire [3:0] Q_out;
-    wire Q_1_out;
-    wire [3:0] tempA;
 
     booth_multiplier uut (
         .clk(clk),
@@ -17,12 +12,7 @@ module tb_booth_multiplier;
         .multiplicand(multiplicand),
         .multiplier(multiplier),
         .product(product),
-        .done(done),
-        .M_out(M_out),
-        .Q_out(Q_out),
-        .A_out(A_out),
-        .Q_1_out(Q_1_out),
-        .tempA(tempA)
+        .done(done)
     );
 
     // Clock generation
