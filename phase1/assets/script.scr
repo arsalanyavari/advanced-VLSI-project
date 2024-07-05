@@ -1,0 +1,51 @@
+set my_files /home/icic/Desktop/files/booth_multiplier.v
+set my_toplevel booth_multiplier
+
+set my_clock_pin clk
+set my_clk_freq_MHz 100
+set my_input_delay_ns 0
+set my_output_delay_ns 0
+
+set link_library /home/icic/Desktop/db/typical.db
+set target_library /home/icic/Desktop/db/typical.db
+set symbol_library /home/icic/Desktop/tsmc18.sdb
+
+define_design_lib WORK -path /home/icic/Desktop/outputs/typical
+
+analyze -f verilog $my_files
+elaborate $my_toplevel
+current_design $my_toplevel
+link
+uniquify
+
+set my_period [expr 1000 / $my_clk_freq_MHz]
+set find_clock [ find port [list $my_clock_pin] ]
+if { $find_clock != [list] } {
+ set clk_name $my_clock_pin
+ create_clock -period $my_period $clk_name
+} else {
+ set clk_name vclk
+ create_clock -period $my_period -name $clk_name
+}
+
+set_input_delay $my_input_delay_ns [all_inputs]
+set_output_delay $my_output_delay_ns [all_outputs]
+
+set_max_area 500000
+
+
+compile 
+check_design
+remove_unconnected_ports -blast_buses [find -hierarchy cell "*"]
+
+report_cell	> /home/icic/Desktop/outputs/typical/report_cell.txt
+report_port	> /home/icic/Desktop/outputs/typical/report_port.txt
+report_timing 	> /home/icic/Desktop/outputs/typical/time_report.txt
+report_area 	> /home/icic/Desktop/outputs/typical/area.txt
+report_qor 	> /home/icic/Desktop/outputs/typical/qor.txt
+report_power	> /home/icic/Desktop/outputs/typical/power.txt
+
+write_sdf /home/icic/Desktop/outputs/typical/delay.sdf
+write_sdc /home/icic/Desktop/outputs/typical/sdc.sdc
+write -f verilog -output /home/icic/Desktop/outputs/typical/netlist.v -hierarchy
+
