@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : qor
+Design : booth_multiplier
+Version: C-2009.06-SP5
+Date   : Fri Jun 27 04:20:29 2014
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              11.00
+  Critical Path Length:          0.94
+  Critical Path Slack:           8.86
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                103
+  Buf/Inv Cell Count:              17
+  CT Buf/Inv Cell Count:            0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       81.130000
+  Noncombinational Area:   155.876000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               237.006001
+  Design Area:             237.006001
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           132
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ICICVM.lab.edu
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.01
+  Logic Optimization:            0.09
+  Mapping Optimization:          0.19
+  -----------------------------------
+  Overall Compile Time:          0.66
+
+1

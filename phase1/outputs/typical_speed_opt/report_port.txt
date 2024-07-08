@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : port
+Design : booth_multiplier
+Version: C-2009.06-SP5
+Date   : Fri Jun 27 04:43:38 2014
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --      --      --         
+multiplicand[0]
+               in      0.0000   0.0000   --      --      --         
+multiplicand[1]
+               in      0.0000   0.0000   --      --      --         
+multiplicand[2]
+               in      0.0000   0.0000   --      --      --         
+multiplicand[3]
+               in      0.0000   0.0000   --      --      --         
+multiplier[0]  in      0.0000   0.0000   --      --      --         
+multiplier[1]  in      0.0000   0.0000   --      --      --         
+multiplier[2]  in      0.0000   0.0000   --      --      --         
+multiplier[3]  in      0.0000   0.0000   --      --      --         
+reset          in      0.0000   0.0000   --      --      --         
+done           out     0.0000   0.0000   --      --      --         
+product[0]     out     0.0000   0.0000   --      --      --         
+product[1]     out     0.0000   0.0000   --      --      --         
+product[2]     out     0.0000   0.0000   --      --      --         
+product[3]     out     0.0000   0.0000   --      --      --         
+product[4]     out     0.0000   0.0000   --      --      --         
+product[5]     out     0.0000   0.0000   --      --      --         
+product[6]     out     0.0000   0.0000   --      --      --         
+product[7]     out     0.0000   0.0000   --      --      --         
+
+1

@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : booth_multiplier
+Version: C-2009.06-SP5
+Date   : Fri Jun 27 04:43:38 2014
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: A_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: A_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  A_reg[1]/CK (DFFR_X2)                    0.00       0.00 r
+  A_reg[1]/QN (DFFR_X2)                    0.18       0.18 r
+  U111/ZN (INV_X4)                         0.03       0.21 f
+  U162/ZN (NAND4_X2)                       0.07       0.28 r
+  U109/ZN (NAND3_X2)                       0.04       0.32 f
+  U110/ZN (INV_X2)                         0.02       0.34 r
+  U190/ZN (NAND2_X2)                       0.02       0.36 f
+  U193/ZN (NAND4_X2)                       0.06       0.41 r
+  A_reg[2]/D (DFFR_X2)                     0.00       0.41 r
+  data arrival time                                   0.41
+
+  max_delay                                0.50       0.50
+  library setup time                      -0.09       0.41
+  data required time                                  0.41
+  -----------------------------------------------------------
+  data required time                                  0.41
+  data arrival time                                  -0.41
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
