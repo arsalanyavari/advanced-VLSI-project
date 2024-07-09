@@ -3,15 +3,15 @@
 Report : qor
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Fri Jun 27 05:19:23 2014
+Date   : Fri Jun 27 05:45:18 2014
 ****************************************
 
 
   Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:               6.00
-  Critical Path Length:          0.41
-  Critical Path Slack:           0.00
+  Levels of Logic:              11.00
+  Critical Path Length:          0.93
+  Critical Path Slack:           8.87
   Critical Path Clk Period:     10.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -25,25 +25,25 @@ Date   : Fri Jun 27 05:19:23 2014
   -----------------------------------
   Hierarchical Cell Count:          0
   Hierarchical Port Count:          0
-  Leaf Cell Count:                159
-  Buf/Inv Cell Count:              20
+  Leaf Cell Count:                103
+  Buf/Inv Cell Count:              17
   CT Buf/Inv Cell Count:            0
   -----------------------------------
 
 
   Area
   -----------------------------------
-  Combinational Area:      134.064000
-  Noncombinational Area:   150.290000
+  Combinational Area:       81.928000
+  Noncombinational Area:   158.270000
   Net Area:                  0.000000
   -----------------------------------
-  Cell Area:               284.354000
-  Design Area:             284.354000
+  Cell Area:               240.198000
+  Design Area:             240.198000
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:           181
+  Total Number of Nets:           136
   Nets With Violations:             0
   -----------------------------------
 
@@ -53,9 +53,9 @@ Date   : Fri Jun 27 05:19:23 2014
   Compile CPU Statistics
   -----------------------------------
   Resource Sharing:              0.01
-  Logic Optimization:            0.24
-  Mapping Optimization:          0.10
+  Logic Optimization:            0.08
+  Mapping Optimization:          0.45
   -----------------------------------
-  Overall Compile Time:          0.69
+  Overall Compile Time:          1.00
 
 1

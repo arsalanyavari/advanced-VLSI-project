@@ -1,0 +1,53 @@
+set my_files /home/icic/Desktop/files/booth_multiplier.v
+set my_toplevel booth_multiplier
+
+set my_clock_pin clk
+set my_clk_freq_MHz 100
+set my_input_delay_ns 0
+set my_output_delay_ns 0
+
+set link_library /home/icic/Desktop/libs/typical/typical.db
+set target_library /home/icic/Desktop/libs/typical/typical.db
+
+
+define_design_lib WORK -path /home/icic/Desktop/outputs/ungroup/typical_power_opt
+
+analyze -f verilog $my_files
+elaborate $my_toplevel
+current_design $my_toplevel
+ungroup -all -all_instances
+link
+uniquify
+
+set_max_dynamic_power 0
+set_max_leakage_power 0
+
+set my_period [expr 1000 / $my_clk_freq_MHz]
+set find_clock [ find port [list $my_clock_pin] ]
+if { $find_clock != [list] } {
+ set clk_name $my_clock_pin
+ create_clock -period $my_period $clk_name
+} else {
+ set clk_name vclk
+ create_clock -period $my_period -name $clk_name
+}
+
+set_input_delay $my_input_delay_ns [all_inputs]
+set_output_delay $my_output_delay_ns [all_outputs]
+
+
+
+compile
+check_design
+remove_unconnected_ports -blast_buses [find -hierarchy cell "*"]
+
+report_cell	> /home/icic/Desktop/outputs/ungroup/typical_power_opt/report_cell.txt
+report_port	> /home/icic/Desktop/outputs/ungroup/typical_power_opt/report_port.txt
+report_timing	> /home/icic/Desktop/outputs/ungroup/typical_power_opt/time_report.txt
+report_area 	> /home/icic/Desktop/outputs/ungroup/typical_power_opt/area.txt
+report_qor 	> /home/icic/Desktop/outputs/ungroup/typical_power_opt/qor.txt
+report_power	> /home/icic/Desktop/outputs/ungroup/typical_power_opt/power.txt
+
+write_sdf /home/icic/Desktop/outputs/ungroup/typical_power_opt/delay.sdf
+write_sdc /home/icic/Desktop/outputs/ungroup/typical_power_opt/sdc.sdc
+write -f verilog -output /home/icic/Desktop/outputs/ungroup/typical_power_opt/netlist.v -hierarchy

@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Fri Jun 27 05:19:23 2014
+Date   : Fri Jun 27 05:53:03 2014
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10

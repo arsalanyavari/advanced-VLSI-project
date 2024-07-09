@@ -3,7 +3,7 @@
 Report : area
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Fri Jun 27 05:19:23 2014
+Date   : Fri Jun 27 05:40:25 2014
 ****************************************
 
 Library(s) Used:
@@ -11,14 +11,14 @@ Library(s) Used:
     NangateOpenCellLibrary_PDKv1_2_v2008_10 (File: /home/icic/Desktop/libs/typical/typical.db)
 
 Number of ports:               19
-Number of nets:               181
-Number of cells:              159
-Number of references:          35
+Number of nets:               121
+Number of cells:              100
+Number of references:          26
 
-Combinational area:        134.064000
+Combinational area:         78.736000
 Noncombinational area:     150.290000
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:           284.354000
+Total cell area:           229.026001
 Total area:                 undefined
 1

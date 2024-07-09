@@ -4,7 +4,7 @@ Information: Updating design information... (UID-85)
 Report : cell
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Fri Jun 27 05:19:23 2014
+Date   : Fri Jun 27 05:53:03 2014
 ****************************************
 
 Attributes:
@@ -46,36 +46,36 @@ U6                        INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_1
                                                           0.532000  
 U7                        AOI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.330000  
-U8                        NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
-                                                          0.798000  
-U9                        OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+U13                       OAI21_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.064000  
-U10                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
-                                                          1.330000  
-U11                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
-                                                          0.798000  
-U12                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+U14                       NAND3_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.064000  
-U13                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
-                                                          1.330000  
-U14                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+U15                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           0.798000  
-U15                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+U16                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.064000  
-U16                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+U17                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.330000  
-U17                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+U18                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           0.798000  
-U18                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+U19                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.064000  
-U19                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+U20                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.330000  
-U20                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+U21                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U22                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U23                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U24                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U25                       OR2_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U26                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U27                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           0.532000  
-U26                       OAI21_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
-                                                          1.064000  
-U27                       NAND3_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
-                                                          1.064000  
 U28                       OAI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
                                                           1.330000  
 U30                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10

@@ -10,7 +10,7 @@ set link_library /home/icic/Desktop/libs/typical/typical.db
 set target_library /home/icic/Desktop/libs/typical/typical.db
 
 
-define_design_lib WORK -path /home/icic/Desktop/outputs/typical_area_opt
+define_design_lib WORK -path /home/icic/Desktop/outputs/ungroup/typical_no_opt
 
 analyze -f verilog $my_files
 elaborate $my_toplevel
@@ -18,8 +18,8 @@ current_design $my_toplevel
 link
 uniquify
 
-
-set_max_area 0
+set_dont_touch $my_toplevel
+ungroup -all -all_instances
 
 set my_period [expr 1000 / $my_clk_freq_MHz]
 set find_clock [ find port [list $my_clock_pin] ]
@@ -40,13 +40,13 @@ compile
 check_design
 remove_unconnected_ports -blast_buses [find -hierarchy cell "*"]
 
-report_cell	> /home/icic/Desktop/outputs/typical_area_opt/report_cell.txt
-report_port	> /home/icic/Desktop/outputs/typical_area_opt/report_port.txt
-report_timing	> /home/icic/Desktop/outputs/typical_area_opt/time_report.txt
-report_area 	> /home/icic/Desktop/outputs/typical_area_opt/area.txt
-report_qor 	> /home/icic/Desktop/outputs/typical_area_opt/qor.txt
-report_power	> /home/icic/Desktop/outputs/typical_area_opt/power.txt
+report_cell	> /home/icic/Desktop/outputs/ungroup/typical_no_opt/report_cell.txt
+report_port	> /home/icic/Desktop/outputs/ungroup/typical_no_opt/report_port.txt
+report_timing	> /home/icic/Desktop/outputs/ungroup/typical_no_opt/time_report.txt
+report_area 	> /home/icic/Desktop/outputs/ungroup/typical_no_opt/area.txt
+report_qor 	> /home/icic/Desktop/outputs/ungroup/typical_no_opt/qor.txt
+report_power	> /home/icic/Desktop/outputs/ungroup/typical_no_opt/power.txt
 
-write_sdf /home/icic/Desktop/outputs/typical_area_opt/delay.sdf
-write_sdc /home/icic/Desktop/outputs/typical_area_opt/sdc.sdc
-write -f verilog -output /home/icic/Desktop/outputs/typical_area_opt/netlist.v -hierarchy
+write_sdf /home/icic/Desktop/outputs/ungroup/typical_no_opt/delay.sdf
+write_sdc /home/icic/Desktop/outputs/ungroup/typical_no_opt/sdc.sdc
+write -f verilog -output /home/icic/Desktop/outputs/ungroup/typical_no_opt/netlist.v -hierarchy

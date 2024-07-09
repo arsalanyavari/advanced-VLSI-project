@@ -15,6 +15,7 @@ define_design_lib WORK -path /home/icic/Desktop/outputs/typical_area_opt
 analyze -f verilog $my_files
 elaborate $my_toplevel
 current_design $my_toplevel
+ungroup -all -all_instances
 link
 uniquify
 
