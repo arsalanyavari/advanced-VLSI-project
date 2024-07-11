@@ -18,6 +18,7 @@ current_design $my_toplevel
 link
 uniquify
 
+
 set_dont_touch $my_toplevel
 
 set my_period [expr 1000 / $my_clk_freq_MHz]

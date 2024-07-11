@@ -10,7 +10,7 @@ set link_library /home/icic/Desktop/libs/typical/typical.db
 set target_library /home/icic/Desktop/libs/typical/typical.db
 
 
-define_design_lib WORK -path /home/icic/Desktop/outputs/typical_area_opt
+define_design_lib WORK -path /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt
 
 analyze -f verilog $my_files
 elaborate $my_toplevel
@@ -18,7 +18,8 @@ current_design $my_toplevel
 link
 uniquify
 
-ungroup -all -force –flatten
+ungroup -all -all_instances
+ungroup -all -force -flatten
 
 set_max_area 0
 
@@ -41,13 +42,13 @@ compile
 check_design
 remove_unconnected_ports -blast_buses [find -hierarchy cell "*"]
 
-report_cell	> /home/icic/Desktop/outputs/typical_area_opt/report_cell.txt
-report_port	> /home/icic/Desktop/outputs/typical_area_opt/report_port.txt
-report_timing	> /home/icic/Desktop/outputs/typical_area_opt/time_report.txt
-report_area 	> /home/icic/Desktop/outputs/typical_area_opt/area.txt
-report_qor 	> /home/icic/Desktop/outputs/typical_area_opt/qor.txt
-report_power	> /home/icic/Desktop/outputs/typical_area_opt/power.txt
+report_cell	> /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/report_cell.txt
+report_port	> /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/report_port.txt
+report_timing	> /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/time_report.txt
+report_area 	> /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/area.txt
+report_qor 	> /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/qor.txt
+report_power	> /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/power.txt
 
-write_sdf /home/icic/Desktop/outputs/typical_area_opt/delay.sdf
-write_sdc /home/icic/Desktop/outputs/typical_area_opt/sdc.sdc
-write -f verilog -output /home/icic/Desktop/outputs/typical_area_opt/netlist.v -hierarchy
+write_sdf /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/delay.sdf
+write_sdc /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/sdc.sdc
+write -f verilog -output /home/icic/Desktop/outputs/ungroup_flatten/typical_area_opt/netlist.v -hierarchy

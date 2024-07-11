@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Fri Jun 27 04:59:18 2014
+Date   : Sat Jun 28 09:00:19 2014
 ****************************************
 
 
