@@ -174,6 +174,8 @@
  mn4 nodo4 in1 ground ground nmos l=45n w=180n
  .ends xor2
 
+ xxor in1 in2 out supply ground xor2
+
  * simulation for delay and leakage power
  vdd supply ground 0.9
  vin1 in1 ground pulse(0 0.9 0 1n 1n 5n 10n)
@@ -210,6 +212,17 @@
        runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
  ***********************************************************************
 
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ * xor gate subcircuit                                                          
+  ******  circuit name directory                                                
+ ******  
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xxor.                           xor2               1.00 
+        2 xxor.xinv1.                     inv                1.00 
+        3 xxor.xinv2.                     inv                1.00 
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  * xor gate subcircuit                                                          
@@ -761,18 +774,39 @@ Model Name: pmos
  **warning** dc voltage reset to initial transient source value
              in source        0:vin2                new dc=  0.0000D+00
 
- **warning**  attempt to reference undefined node     0:out             
-  in the definition of v(out,0)
-   branch - output ignored
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
 
  
-
- **warning** the following singular supplies were terminated to 1 meg resistor 
-   supply       node1            node2
-  vin1                    0:in1              defined in subckt 0                     0:0                defined in subckt 0               
-  vin2                    0:in2              defined in subckt 0                     0:0                defined in subckt 0               
-  vdd                     0:supply           defined in subckt 0                     0:0                defined in subckt 0               
       
+  Opening plot unit= 79
+ file=d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phas
+
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  * xor gate subcircuit                                                          
@@ -781,21 +815,20 @@ Model Name: pmos
  ***** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:in1     =   0.      0:in2     =   0.      0:supply  = 900.0000m
+ +0:in1     =   0.      0:in2     =   0.      0:out     = 439.6029u
+ +0:supply  = 900.0000m 1:in1_n   = 899.7530m 1:in2_n   = 899.7346m
+ +1:nodo1   = 125.6567m 1:nodo2   = 899.8231m 1:nodo3   = 238.2815u
+ +1:nodo4   = 218.0161u
 
  ******  
  * xor gate subcircuit                                                          
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-
- **warning**  tpdr= failed, targ source signal does not exist 
-
-
- **warning**  tpdf= failed, targ source signal does not exist 
-
-   tdelay= failed                         measure parameter failed
-   iavg= -9.0000E-07  from=  0.0000E+00     to=  2.0000E-08
-   pleak= -8.1000E-07
+   tpdr=  4.5057E-12  targ=  5.0451E-10   trig=  5.0000E-10
+   tpdf= -9.6992E-10  targ=  5.5301E-09   trig=  6.5000E-09
+   tdelay= -4.8271E-10
+   iavg= -7.2224E-06  from=  0.0000E+00     to=  2.0000E-08
+   pleak= -6.5002E-06
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -804,24 +837,24 @@ Model Name: pmos
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        155 kbytes
+           total memory used        194 kbytes
 
-  # nodes =       4 # elements=       6
-  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       0
+  # nodes =      59 # elements=      15
+  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =      12
   # va device =       0
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.00           1           3
-    transient          0.07         201          68          34 rev=         0
+    op point           0.00           1          19
+    transient          0.09         201         488         142 rev=         9
     readin             0.01
     errchk             0.01
     setup              0.01
     output             0.00
            total cpu time          0.13 seconds
            total elapsed time         1 seconds
-               job started at  20:16:10 07/17/2008
-               job ended   at  20:16:10 07/17/2008
+               job started at  18:39:03 07/18/2008
+               job ended   at  18:39:03 07/18/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

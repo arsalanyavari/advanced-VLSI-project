@@ -9,6 +9,8 @@ Xnor1 in1 in2 nodo1 supply ground NOR2
 Xinv1 nodo1 out supply ground INV
 .ends OR2
 
+Xor in1 in2 out supply ground OR2
+
 * Simulation for delay and leakage power
 Vdd supply ground 0.9
 Vin1 in1 ground PULSE(0 0.9 0 1n 1n 5n 10n)

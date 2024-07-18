@@ -182,6 +182,31 @@
  xnor1 in1 in2 nodo1 supply ground nor2
  xinv1 nodo1 out supply ground inv
  .ends or2
+ .include ../../assets/spice_code/inv.sp
+ * inverter subcircuit
+
+ .subckt inv in out supply ground
+ m1 out in supply supply pmos l=45n w=180n
+ m2 out in ground ground nmos l=45n w=90n
+ .ends inv
+ .include ../../assets/spice_code/nand.sp
+ * nand gate subcircuit
+
+ .subckt nand2 in1 in2 out supply ground
+ mp1 out in1 supply supply pmos l=45n w=180n
+ mp2 out in2 supply supply pmos l=45n w=180n
+ mn1 out in1 nodo1 ground nmos l=45n w=180n
+ mn2 nodo1 in2 ground ground nmos l=45n w=180n
+ .ends nand2
+ .include ../../assets/spice_code/nor.sp
+ * nor gate subcircuit
+
+ .subckt nor2 in1 in2 out supply ground
+ mp1 nodo1 in1 supply supply pmos l=45n w=360n
+ mp2 out in2 nodo1 supply pmos l=45n w=360n
+ mn1 out in1 ground ground nmos l=45n w=90n
+ mn2 out in2 ground ground nmos l=45n w=90n
+ .ends nor2
 
  .subckt fa cin in1 in2 cout soma supply ground
  xxor1 in1 in2 in1xorin2 supply ground xor2
@@ -190,6 +215,8 @@
  xand2 in1 in2 in1andin2 supply ground and2
  xor1 in1xorin2andcin in1andin2 cout supply ground or2
  .ends fa
+
+ xfa cin in1 in2 cout soma supply ground fa
 
  * simulation for delay and leakage power
  vdd supply ground 0.9
@@ -228,6 +255,30 @@
        runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
  ***********************************************************************
 
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ * full adder subcircuit                                                        
+  ******  circuit name directory                                                
+ ******  
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xfa.                            fa                 1.00 
+        2 xfa.xxor1.                      xor2               1.00 
+        3 xfa.xxor2.                      xor2               1.00 
+        4 xfa.xand1.                      and2               1.00 
+        5 xfa.xand2.                      and2               1.00 
+        6 xfa.xor1.                       or2                1.00 
+        7 xfa.xxor1.xinv1.                inv                1.00 
+        8 xfa.xxor1.xinv2.                inv                1.00 
+        9 xfa.xxor2.xinv1.                inv                1.00 
+       10 xfa.xxor2.xinv2.                inv                1.00 
+       11 xfa.xand1.xnand1.               nand2              1.00 
+       12 xfa.xand1.xinv1.                inv                1.00 
+       13 xfa.xand2.xnand1.               nand2              1.00 
+       14 xfa.xand2.xinv1.                inv                1.00 
+       15 xfa.xor1.xnor1.                 nor2               1.00 
+       16 xfa.xor1.xinv1.                 inv                1.00 
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  * full adder subcircuit                                                        
@@ -783,43 +834,148 @@ Model Name: pmos
  **warning** dc voltage reset to initial transient source value
              in source        0:vin2                new dc=  0.0000D+00
 
- **warning**  attempt to reference undefined node     0:soma            
-  in the definition of v(soma,0)
-   branch - output ignored
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
 
  
-
- **warning** the following singular supplies were terminated to 1 meg resistor 
-   supply       node1            node2
-  vcin                    0:cin              defined in subckt 0                     0:0                defined in subckt 0               
-  vin1                    0:in1              defined in subckt 0                     0:0                defined in subckt 0               
-  vin2                    0:in2              defined in subckt 0                     0:0                defined in subckt 0               
-  vdd                     0:supply           defined in subckt 0                     0:0                defined in subckt 0               
       
+  Opening plot unit= 79
+ file=d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phas
+
+
+ **diagnostic** dc convergence failure, 
+ resetting dcon option to 1 and retrying
+
+ **diagnostic** dc convergence successful
+ you can increase the efficiency of the
+ operating point calculation by setting dcon= 1
+ in the .option statement
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  * full adder subcircuit                                                        
   ******  operating point information      tnom=  25.000 temp=  25.000          
  ******  
  ***** operating point status is voltage   simulation time is     0.     
-    node    =voltage      node    =voltage      node    =voltage
+     node    =voltage       node    =voltage       node    =voltage
 
- +0:cin     =   0.      0:in1     =   0.      0:in2     =   0.     
- +0:supply  = 900.0000m
+ + 0:cin     =   0.       0:cout    = 123.7475u  0:in1     =   0.     
+ + 0:in2     =   0.       0:soma    = 439.6055u  0:supply  = 900.0000m
+ + 1:in1andin= 299.1807u  1:in1xorin= 790.5864u  1:in1xorin= 299.3407u
+ + 2:in1_n   = 899.7530m  2:in2_n   = 899.7347m  2:nodo1   = 125.6845m
+ + 2:nodo2   = 899.8232m  2:nodo3   = 413.7460u  2:nodo4   = 390.9757u
+ + 3:in1_n   = 899.7524m  3:in2_n   = 899.7346m  3:nodo1   = 125.6571m
+ + 3:nodo2   = 899.8233m  3:nodo3   = 238.2828u  3:nodo4   = 217.4270u
+ + 4:nodo1   = 899.8846m  5:nodo1   = 899.8845m  6:nodo1   = 899.6052m
+ +11:nodo1   =  66.7361m 13:nodo1   =  66.1798m 15:nodo1   = 899.7475m
 
  ******  
  * full adder subcircuit                                                        
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-
- **warning**  tpdr= failed, targ source signal does not exist 
-
-
- **warning**  tpdf= failed, targ source signal does not exist 
-
-   tdelay= failed                         measure parameter failed
-   iavg= -9.0000E-07  from=  0.0000E+00     to=  2.0000E-08
-   pleak= -8.1000E-07
+   tpdr= -4.9593E-09  targ=  5.4072E-10   trig=  5.5000E-09
+   tpdf= -5.9455E-09  targ=  5.5545E-09   trig=  1.1500E-08
+   tdelay= -5.4524E-09
+   iavg= -1.4433E-05  from=  0.0000E+00     to=  2.0000E-08
+   pleak= -1.2989E-05
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -828,24 +984,24 @@ Model Name: pmos
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        158 kbytes
+           total memory used        551 kbytes
 
-  # nodes =       5 # elements=       8
-  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       0
+  # nodes =     196 # elements=      46
+  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =      42
   # va device =       0
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.00           1           3
-    transient          0.07         201          68          34 rev=         0
+    op point           0.03           1         185
+    transient          0.19         201         884         250 rev=        18
     readin             0.01
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.12 seconds
+           total cpu time          0.27 seconds
            total elapsed time         1 seconds
-               job started at  20:13:49 07/17/2008
-               job ended   at  20:13:49 07/17/2008
+               job started at  18:47:00 07/18/2008
+               job ended   at  18:47:01 07/18/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

@@ -9,6 +9,8 @@ MN1 out in1 ground ground nmos l=45n w=90n
 MN2 out in2 ground ground nmos l=45n w=90n
 .ends NOR2
 
+Xnor in1 in2 out supply ground NOR2
+
 * Simulation for delay and leakage power
 Vdd supply ground 0.9
 Vin1 in1 ground PULSE(0 0.9 0 1n 1n 5n 10n)

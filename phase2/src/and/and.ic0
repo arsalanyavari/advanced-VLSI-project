@@ -1,9 +1,9 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "18:38:51 07/18/2008 "
-* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\or\or.sp "
-* "runtitle" "* or gate subcircuit"
+* "rundate" "18:38:19 07/18/2008 "
+* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\and\and.sp "
+* "runtitle" "* and gate subcircuit"
 * time =    0.            
 * temperature =   25.0000        
 *** BEGIN: Saved Operating Point ***                     
@@ -12,8 +12,8 @@
 .nodeset
 + in1 =   0.            
 + in2 =   0.            
-+ out = 123.7469u       
++ out = 123.1004u       
 + supply = 900.0000m       
-+ xor.nodo1 = 899.6055m       
-+ xor.xnor1.nodo1 = 899.7476m       
++ xand.nodo1 = 899.8845m       
++ xand.xnand1.nodo1 =  66.1798m       
 ***   END: Saved Operating Point ***                     

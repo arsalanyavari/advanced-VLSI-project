@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "20:13:49 07/17/2008 "
+* "rundate" "18:47:00 07/18/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\full_adder\fa.sp "
 * "runtitle" "* full adder subcircuit"
 * time =    0.            
@@ -11,7 +11,30 @@
 + gmindc=   1.0000p       
 .nodeset
 + cin =   0.            
++ cout = 123.7475u       
 + in1 =   0.            
 + in2 =   0.            
++ soma = 439.6055u       
 + supply = 900.0000m       
++ xfa.in1andin2 = 299.1807u       
++ xfa.in1xorin2 = 790.5864u       
++ xfa.in1xorin2andcin = 299.3407u       
++ xfa.xxor1.in1_n = 899.7530m       
++ xfa.xxor1.in2_n = 899.7347m       
++ xfa.xxor1.nodo1 = 125.6845m       
++ xfa.xxor1.nodo2 = 899.8232m       
++ xfa.xxor1.nodo3 = 413.7460u       
++ xfa.xxor1.nodo4 = 390.9757u       
++ xfa.xxor2.in1_n = 899.7524m       
++ xfa.xxor2.in2_n = 899.7346m       
++ xfa.xxor2.nodo1 = 125.6571m       
++ xfa.xxor2.nodo2 = 899.8233m       
++ xfa.xxor2.nodo3 = 238.2828u       
++ xfa.xxor2.nodo4 = 217.4270u       
++ xfa.xand1.nodo1 = 899.8846m       
++ xfa.xand2.nodo1 = 899.8845m       
++ xfa.xor1.nodo1 = 899.6052m       
++ xfa.xand1.xnand1.nodo1 =  66.7361m       
++ xfa.xand2.xnand1.nodo1 =  66.1798m       
++ xfa.xor1.xnor1.nodo1 = 899.7475m       
 ***   END: Saved Operating Point ***                     

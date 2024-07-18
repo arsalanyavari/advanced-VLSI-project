@@ -4,6 +4,9 @@
 .include ../../assets/spice_code/xor.sp
 .include ../../assets/spice_code/and.sp
 .include ../../assets/spice_code/or.sp
+.include ../../assets/spice_code/inv.sp
+.include ../../assets/spice_code/nand.sp
+.include ../../assets/spice_code/nor.sp
 
 .SUBCKT FA cin in1 in2 cout soma supply ground
 Xxor1 in1 in2 in1xorin2 supply ground XOR2
@@ -12,6 +15,8 @@ Xand1 in1xorin2 cin in1xorin2andcin supply ground AND2
 Xand2 in1 in2 in1andin2 supply ground AND2
 Xor1 in1xorin2andcin in1andin2 cout supply ground OR2
 .ends FA
+
+Xfa cin in1 in2 cout soma supply ground FA
 
 * Simulation for delay and leakage power
 Vdd supply ground 0.9

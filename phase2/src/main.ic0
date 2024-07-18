@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "20:22:49 07/17/2008 "
+* "rundate" "18:47:21 07/18/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\main.sp "
 * "runtitle" "* top-level ripple carry adder"
 * time =    0.            
@@ -34,7 +34,6 @@
 + cout6 = 499.5758u       
 + cout7 = 499.5758u       
 + cout8 = 123.7475u       
-+ fonte = 900.0000m       
 + sum1 = 899.6054m       
 + sum2 = 899.6048m       
 + sum3 = 899.6048m       
@@ -43,6 +42,7 @@
 + sum6 = 899.6048m       
 + sum7 = 899.6048m       
 + sum8 = 899.6048m       
++ supply = 900.0000m       
 + xfulladder1.in1andin2 = 299.4762u       
 + xfulladder1.in1xorin2 = 899.4288m       
 + xfulladder1.in1xorin2andcin = 299.5387u       

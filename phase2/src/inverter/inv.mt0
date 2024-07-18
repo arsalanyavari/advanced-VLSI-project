@@ -2,5 +2,5 @@ $DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
 .TITLE '* inverter subcircuit'
  tpdr             tpdf             tdelay           iavg              
  pleak            temper           alter#            
-    failed           failed           failed        -9.000e-07        
- -8.100e-07         25.0000           1.0000         
+  6.005e-09       -5.995e-09        4.690e-12       -1.667e-06        
+ -1.501e-06         25.0000           1.0000         

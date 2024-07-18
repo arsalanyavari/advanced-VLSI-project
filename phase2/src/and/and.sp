@@ -1,13 +1,15 @@
 * AND gate subcircuit
 
 .include ../45nm_MGK.pm
-.include ../nand/nand.sp
-.include ../inverter/inv.sp
+.include ../../assets/spice_code/nand.sp
+.include ../../assets/spice_code/inv.sp
 
 .SUBCKT AND2 in1 in2 out supply ground
 Xnand1 in1 in2 nodo1 supply ground NAND2
 Xinv1 nodo1 out supply ground INV
 .ends AND2
+
+Xand in1 in2 out supply ground AND2
 
 * Simulation for delay and leakage power
 Vdd supply ground 0.9

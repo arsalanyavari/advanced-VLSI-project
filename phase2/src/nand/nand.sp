@@ -9,6 +9,8 @@ MN1 out in1 nodo1 ground nmos l=45n w=180n
 MN2 nodo1 in2 ground ground nmos l=45n w=180n
 .ends NAND2
 
+Xnand in1 in2 out supply ground NAND2
+
 * Simulation for delay and leakage power
 
 Vin1 in1 ground PULSE(0 0.9 0 1n 1n 5n 10n)

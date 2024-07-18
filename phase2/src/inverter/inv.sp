@@ -7,6 +7,8 @@ M1 out in supply supply pmos l=45n w=180n
 M2 out in ground ground nmos l=45n w=90n
 .ends INV
 
+Xinv1 in out supply ground INV
+
 * Simulation for delay and leakage power
 Vdd supply ground 0.9
 Vin in ground PULSE(0 0.9 0 1n 1n 5n 10n)
@@ -17,4 +19,5 @@ Vin in ground PULSE(0 0.9 0 1n 1n 5n 10n)
 .measure tran tdelay PARAM='(tpdr+tpdf)/2'
 .measure tran iavg AVG(I(Vdd))
 .measure tran pleak PARAM='iavg*0.9'
+
 .end

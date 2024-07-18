@@ -153,6 +153,15 @@
  +rshg    = 0.1             gbmin   = 1e-012          rbpb    = 50              rbpd    = 50
  +rbps    = 50              rbdb    = 50              rbsb    = 50              ngcon   = 1
           
+ .include ../../assets/spice_code/nand.sp
+ * nand gate subcircuit
+
+ .subckt nand2 in1 in2 out supply ground
+ mp1 out in1 supply supply pmos l=45n w=180n
+ mp2 out in2 supply supply pmos l=45n w=180n
+ mn1 out in1 nodo1 ground nmos l=45n w=180n
+ mn2 nodo1 in2 ground ground nmos l=45n w=180n
+ .ends nand2
  .include ../../assets/spice_code/inv.sp
  * inverter subcircuit
 
@@ -160,22 +169,13 @@
  m1 out in supply supply pmos l=45n w=180n
  m2 out in ground ground nmos l=45n w=90n
  .ends inv
- .include ../../assets/spice_code/nor.sp
- * nor gate subcircuit
 
- .subckt nor2 in1 in2 out supply ground
- mp1 nodo1 in1 supply supply pmos l=45n w=360n
- mp2 out in2 nodo1 supply pmos l=45n w=360n
- mn1 out in1 ground ground nmos l=45n w=90n
- mn2 out in2 ground ground nmos l=45n w=90n
- .ends nor2
-
- .subckt or2 in1 in2 out supply ground
- xnor1 in1 in2 nodo1 supply ground nor2
+ .subckt and2 in1 in2 out supply ground
+ xnand1 in1 in2 nodo1 supply ground nand2
  xinv1 nodo1 out supply ground inv
- .ends or2
+ .ends and2
 
- xor in1 in2 out supply ground or2
+ xand in1 in2 out supply ground and2
 
  * simulation for delay and leakage power
  vdd supply ground 0.9
@@ -215,18 +215,18 @@
 
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- * or gate subcircuit                                                           
+ * and gate subcircuit                                                          
   ******  circuit name directory                                                
  ******  
  circuit number to circuit name directory
    number circuitname                     definition         multiplier
         0 main circuit
-        1 xor.                            or2                1.00 
-        2 xor.xnor1.                      nor2               1.00 
-        3 xor.xinv1.                      inv                1.00 
+        1 xand.                           and2               1.00 
+        2 xand.xnand1.                    nand2              1.00 
+        3 xand.xinv1.                     inv                1.00 
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- * or gate subcircuit                                                           
+ * and gate subcircuit                                                          
   ******  mos   model parameters           tnom=  25.000 temp=  25.000          
  ******  
  
@@ -775,21 +775,17 @@ Model Name: pmos
  **warning** dc voltage reset to initial transient source value
              in source        0:vin2                new dc=  0.0000D+00
 
- Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
 
- Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
-
- Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
-
- Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
 
  Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
 
  Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
 
- Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
 
- Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
 
  Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
 
@@ -800,29 +796,29 @@ Model Name: pmos
 
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- * or gate subcircuit                                                           
+ * and gate subcircuit                                                          
   ******  operating point information      tnom=  25.000 temp=  25.000          
  ******  
  ***** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:in1     =   0.      0:in2     =   0.      0:out     = 123.7469u
- +0:supply  = 900.0000m 1:nodo1   = 899.6055m 2:nodo1   = 899.7476m
+ +0:in1     =   0.      0:in2     =   0.      0:out     = 123.1004u
+ +0:supply  = 900.0000m 1:nodo1   = 899.8845m 2:nodo1   =  66.1798m
 
  ******  
- * or gate subcircuit                                                           
+ * and gate subcircuit                                                          
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-   tpdr=  1.4502E-10  targ=  6.4502E-10   trig=  5.0000E-10
-   tpdf= failed       targ= not found    trig=  6.5000E-09
-   tdelay= failed                         measure parameter failed
-   iavg= -8.6575E-07  from=  0.0000E+00     to=  2.0000E-08
-   pleak= -7.7917E-07
+   tpdr=  4.9670E-09  targ=  5.4670E-09   trig=  5.0000E-10
+   tpdf=  2.6959E-11  targ=  6.5270E-09   trig=  6.5000E-09
+   tdelay=  2.4970E-09
+   iavg= -3.4471E-06  from=  0.0000E+00     to=  2.0000E-08
+   pleak= -3.1024E-06
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- * or gate subcircuit                                                           
+ * and gate subcircuit                                                          
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
@@ -834,16 +830,16 @@ Model Name: pmos
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.01           1          10
-    transient          0.07         201         258          92 rev=         9
+    op point           0.01           1          11
+    transient          0.09         201         382         122 rev=         5
     readin             0.02
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.13 seconds
+           total cpu time          0.15 seconds
            total elapsed time         1 seconds
-               job started at  18:38:51 07/18/2008
-               job ended   at  18:38:51 07/18/2008
+               job started at  18:38:19 07/18/2008
+               job ended   at  18:38:19 07/18/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

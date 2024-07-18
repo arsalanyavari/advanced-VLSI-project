@@ -159,6 +159,8 @@
  m2 out in ground ground nmos l=45n w=90n
  .ends inv
 
+ xinv1 in out supply ground inv
+
  * simulation for delay and leakage power
  vdd supply ground 0.9
  vin in ground pulse(0 0.9 0 1n 1n 5n 10n)
@@ -169,6 +171,7 @@
  .measure tran tdelay param='(tpdr+tpdf)/2'
  .measure tran iavg avg(i(vdd))
  .measure tran pleak param='iavg*0.9'
+
  .end
 
  ***********************************************************************
@@ -194,6 +197,15 @@
        runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
  ***********************************************************************
 
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ * inverter subcircuit                                                          
+  ******  circuit name directory                                                
+ ******  
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xinv1.                          inv                1.00 
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  * inverter subcircuit                                                          
@@ -741,40 +753,36 @@ Model Name: pmos
  **warning** dc voltage reset to initial transient source value
              in source        0:vin                 new dc=  0.0000D+00
 
- **warning**  attempt to reference undefined node     0:out             
-  in the definition of v(out,0)
-   branch - output ignored
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
 
  
-
- **warning** the following singular supplies were terminated to 1 meg resistor 
-   supply       node1            node2
-  vin                     0:in               defined in subckt 0                     0:0                defined in subckt 0               
-  vdd                     0:supply           defined in subckt 0                     0:0                defined in subckt 0               
       
+  Opening plot unit= 79
+ file=d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phas
+
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  * inverter subcircuit                                                          
   ******  operating point information      tnom=  25.000 temp=  25.000          
  ******  
  ***** operating point status is voltage   simulation time is     0.     
-    node    =voltage      node    =voltage
+    node    =voltage      node    =voltage      node    =voltage
 
- +0:in      =   0.      0:supply  = 900.0000m
+ +0:in      =   0.      0:out     = 899.8929m 0:supply  = 900.0000m
 
  ******  
  * inverter subcircuit                                                          
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-
- **warning**  tpdr= failed, targ source signal does not exist 
-
-
- **warning**  tpdf= failed, targ source signal does not exist 
-
-   tdelay= failed                         measure parameter failed
-   iavg= -9.0000E-07  from=  0.0000E+00     to=  2.0000E-08
-   pleak= -8.1000E-07
+   tpdr=  6.0046E-09  targ=  6.5046E-09   trig=  5.0000E-10
+   tpdf= -5.9952E-09  targ=  5.0477E-10   trig=  6.5000E-09
+   tdelay=  4.6901E-12
+   iavg= -1.6674E-06  from=  0.0000E+00     to=  2.0000E-08
+   pleak= -1.5007E-06
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -783,24 +791,24 @@ Model Name: pmos
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        154 kbytes
+           total memory used        159 kbytes
 
-  # nodes =       3 # elements=       4
-  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       0
+  # nodes =      12 # elements=       4
+  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       2
   # va device =       0
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.00           1           3
-    transient          0.07         201          62          31 rev=         0
+    op point           0.00           1           5
+    transient          0.10         201         203          76 rev=         5
     readin             0.01
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.12 seconds
+           total cpu time          0.15 seconds
            total elapsed time         1 seconds
-               job started at  20:14:10 07/17/2008
-               job ended   at  20:14:10 07/17/2008
+               job started at  18:35:54 07/18/2008
+               job ended   at  18:35:54 07/18/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

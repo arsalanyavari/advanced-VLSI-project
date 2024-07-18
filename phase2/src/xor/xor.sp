@@ -16,6 +16,8 @@ MN3 out in2 nodo4 ground nmos l=45n w=180n
 MN4 nodo4 in1 ground ground nmos l=45n w=180n
 .ends XOR2
 
+Xxor in1 in2 out supply ground XOR2
+
 * Simulation for delay and leakage power
 Vdd supply ground 0.9
 Vin1 in1 ground PULSE(0 0.9 0 1n 1n 5n 10n)

@@ -219,34 +219,34 @@
  .ends fa
 
 
- vvdd fonte gnd 0.9v
- xfulladder1 0 a0 b0 cout1 sum1 fonte gnd fa
- xfulladder2 cout1 a1 b1 cout2 sum2 fonte gnd fa
- xfulladder3 cout2 a2 b2 cout3 sum3 fonte gnd fa
- xfulladder4 cout3 a3 b3 cout4 sum4 fonte gnd fa
- xfulladder5 cout4 a4 b4 cout5 sum5 fonte gnd fa
- xfulladder6 cout5 a5 b5 cout6 sum6 fonte gnd fa
- xfulladder7 cout6 a6 b6 cout7 sum7 fonte gnd fa
- xfulladder8 cout7 a7 b7 cout8 sum8 fonte gnd fa
+ vvdd supply gnd 0.9v
+ xfulladder1 0 a0 b0 cout1 sum1 supply ground fa
+ xfulladder2 cout1 a1 b1 cout2 sum2 supply ground fa
+ xfulladder3 cout2 a2 b2 cout3 sum3 supply ground fa
+ xfulladder4 cout3 a3 b3 cout4 sum4 supply ground fa
+ xfulladder5 cout4 a4 b4 cout5 sum5 supply ground fa
+ xfulladder6 cout5 a5 b5 cout6 sum6 supply ground fa
+ xfulladder7 cout6 a6 b6 cout7 sum7 supply ground fa
+ xfulladder8 cout7 a7 b7 cout8 sum8 supply ground fa
 
  * simulation settings
- va0 a0 gnd pwl(0n 0 1n 0 1.01n 0.9)
- va1 a1 gnd 0.9
- va2 a2 gnd 0.9
- va3 a3 gnd 0.9
- va4 a4 gnd 0.9
- va5 a5 gnd 0.9
- va6 a6 gnd 0.9
- va7 a7 gnd 0.9
+ va0 a0 ground pwl(0n 0 1n 0 1.01n 0.9)
+ va1 a1 ground 0.9
+ va2 a2 ground 0.9
+ va3 a3 ground 0.9
+ va4 a4 ground 0.9
+ va5 a5 ground 0.9
+ va6 a6 ground 0.9
+ va7 a7 ground 0.9
 
- vb0 b0 gnd 0.9
- vb1 b1 gnd 0.0
- vb2 b2 gnd 0.0
- vb3 b3 gnd 0.0
- vb4 b4 gnd 0.0
- vb5 b5 gnd 0.0
- vb6 b6 gnd 0.0
- vb7 b7 gnd 0.0
+ vb0 b0 ground 0.9
+ vb1 b1 ground 0.0
+ vb2 b2 ground 0.0
+ vb3 b3 ground 0.0
+ vb4 b4 ground 0.0
+ vb5 b5 ground 0.0
+ vb6 b6 ground 0.0
+ vb7 b7 ground 0.0
 
  .measure tran critico trig v(a0) val=0.45 rise=1 targ v(cout8) val=0.45 rise=1
  .tran 2p 4n
@@ -1803,9 +1803,9 @@ Model Name: pmos
  +  0:b7      =   0.        0:cout1   = 499.5758u   0:cout2   = 499.5758u
  +  0:cout3   = 499.5758u   0:cout4   = 499.5758u   0:cout5   = 499.5758u
  +  0:cout6   = 499.5758u   0:cout7   = 499.5758u   0:cout8   = 123.7475u
- +  0:fonte   = 900.0000m   0:sum1    = 899.6054m   0:sum2    = 899.6048m
- +  0:sum3    = 899.6048m   0:sum4    = 899.6048m   0:sum5    = 899.6048m
- +  0:sum6    = 899.6048m   0:sum7    = 899.6048m   0:sum8    = 899.6048m
+ +  0:sum1    = 899.6054m   0:sum2    = 899.6048m   0:sum3    = 899.6048m
+ +  0:sum4    = 899.6048m   0:sum5    = 899.6048m   0:sum6    = 899.6048m
+ +  0:sum7    = 899.6048m   0:sum8    = 899.6048m   0:supply  = 900.0000m
  +  1:in1andin= 299.4762u   1:in1xorin= 899.4288m   1:in1xorin= 299.5387u
  +  2:in1andin= 299.3787u   2:in1xorin= 899.4289m   2:in1xorin= 299.5398u
  +  3:in1andin= 299.3787u   3:in1xorin= 899.4289m   3:in1xorin= 299.5398u
@@ -1884,16 +1884,16 @@ Model Name: pmos
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.19           1         143
-    transient          0.40        2001         428         146 rev=         1
+    op point           0.18           1         143
+    transient          0.34        2001         428         146 rev=         1
     readin             0.02
     errchk             0.02
-    setup              0.03
+    setup              0.02
     output             0.00
-           total cpu time          0.69 seconds
+           total cpu time          0.60 seconds
            total elapsed time         1 seconds
-               job started at  20:22:49 07/17/2008
-               job ended   at  20:22:50 07/17/2008
+               job started at  18:47:21 07/18/2008
+               job ended   at  18:47:21 07/18/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

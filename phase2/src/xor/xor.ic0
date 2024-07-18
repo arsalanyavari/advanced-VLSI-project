@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "20:16:10 07/17/2008 "
+* "rundate" "18:39:03 07/18/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\xor\xor.sp "
 * "runtitle" "* xor gate subcircuit"
 * time =    0.            
@@ -12,5 +12,12 @@
 .nodeset
 + in1 =   0.            
 + in2 =   0.            
++ out = 439.6029u       
 + supply = 900.0000m       
++ xxor.in1_n = 899.7530m       
++ xxor.in2_n = 899.7346m       
++ xxor.nodo1 = 125.6567m       
++ xxor.nodo2 = 899.8231m       
++ xxor.nodo3 = 238.2815u       
++ xxor.nodo4 = 218.0161u       
 ***   END: Saved Operating Point ***                     

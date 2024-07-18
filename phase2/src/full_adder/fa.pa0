@@ -1,0 +1,16 @@
+       1 xfa.
+       2 xfa.xxor1.
+       3 xfa.xxor2.
+       4 xfa.xand1.
+       5 xfa.xand2.
+       6 xfa.xor1.
+       7 xfa.xxor1.xinv1.
+       8 xfa.xxor1.xinv2.
+       9 xfa.xxor2.xinv1.
+      10 xfa.xxor2.xinv2.
+      11 xfa.xand1.xnand1.
+      12 xfa.xand1.xinv1.
+      13 xfa.xand2.xnand1.
+      14 xfa.xand2.xinv1.
+      15 xfa.xor1.xnor1.
+      16 xfa.xor1.xinv1.
