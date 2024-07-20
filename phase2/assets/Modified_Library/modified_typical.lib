@@ -334,23 +334,23 @@ cell (AND2_X1) {
 
 	area               	: 1.064000;
 
-	cell_leakage_power 	: 8230.085000;
+	cell_leakage_power 	: 1.0323E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 4709.343000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 4896.167000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 11032.050000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 12282.780000;
+		value      	: 1.0323E-08;
 	}
 
 	pin (A1) {
@@ -1991,23 +1991,23 @@ cell (AND2_X2) {
 
 	area               	: 1.064000;
 
-	cell_leakage_power 	: 11878.907250;
+	cell_leakage_power 	: 1.0323E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 8825.954000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 9012.915000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 15148.590000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 14528.170000;
+		value      	: 1.0323E-08;
 	}
 
 	pin (A1) {
@@ -3648,23 +3648,23 @@ cell (AND2_X4) {
 
 	area               	: 1.064000;
 
-	cell_leakage_power 	: 19176.880000;
+	cell_leakage_power 	: 1.0323E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 17059.320000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 17246.710000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 23381.990000;
+		value      	: 1.0323E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 19019.500000;
+		value      	: 1.0323E-08;
 	}
 
 	pin (A1) {
@@ -5305,15 +5305,15 @@ cell (INV_X1) {
 
 	area               	: 0.532000;
 
-	cell_leakage_power 	: 2843.754500;
+	cell_leakage_power 	: 7.7294E-10;
 
 	leakage_power () {
 		when      	: "!A";
-		value      	: 1995.996000;
+		value      	: 7.7294E-10;
 	}
 	leakage_power () {
 		when      	: "A";
-		value      	: 3691.513000;
+		value      	: 7.7294E-10;
 	}
 
 	pin (A) {
@@ -6135,15 +6135,15 @@ cell (INV_X16) {
 
 	area               	: 1.330000;
 
-	cell_leakage_power 	: 49542.075000;
+	cell_leakage_power 	: 7.7294E-10;
 
 	leakage_power () {
 		when      	: "!A";
-		value      	: 34918.980000;
+		value      	: 7.7294E-10;
 	}
 	leakage_power () {
 		when      	: "A";
-		value      	: 64165.170000;
+		value      	: 7.7294E-10;
 	}
 
 	pin (A) {
@@ -6965,15 +6965,15 @@ cell (INV_X2) {
 
 	area               	: 0.532000;
 
-	cell_leakage_power 	: 6024.299000;
+	cell_leakage_power 	: 7.7294E-10;
 
 	leakage_power () {
 		when      	: "!A";
-		value      	: 4240.510000;
+		value      	: 7.7294E-10;
 	}
 	leakage_power () {
 		when      	: "A";
-		value      	: 7808.088000;
+		value      	: 7.7294E-10;
 	}
 
 	pin (A) {
@@ -7795,15 +7795,15 @@ cell (INV_X32) {
 
 	area               	: 2.128000;
 
-	cell_leakage_power 	: 99658.900000;
+	cell_leakage_power 	: 7.7294E-10;
 
 	leakage_power () {
 		when      	: "!A";
-		value      	: 70274.100000;
+		value      	: 7.7294E-10;
 	}
 	leakage_power () {
 		when      	: "A";
-		value      	: 129043.700000;
+		value      	: 7.7294E-10;
 	}
 
 	pin (A) {
@@ -8625,15 +8625,15 @@ cell (INV_X4) {
 
 	area               	: 0.532000;
 
-	cell_leakage_power 	: 12385.446500;
+	cell_leakage_power 	: 7.7294E-10;
 
 	leakage_power () {
 		when      	: "!A";
-		value      	: 8729.633000;
+		value      	: 7.7294E-10;
 	}
 	leakage_power () {
 		when      	: "A";
-		value      	: 16041.260000;
+		value      	: 7.7294E-10;
 	}
 
 	pin (A) {
@@ -9455,15 +9455,15 @@ cell (INV_X8) {
 
 	area               	: 0.798000;
 
-	cell_leakage_power 	: 24770.935000;
+	cell_leakage_power 	: 7.7294E-10;
 
 	leakage_power () {
 		when      	: "!A";
-		value      	: 17459.330000;
+		value      	: 7.7294E-10;
 	}
 	leakage_power () {
 		when      	: "A";
-		value      	: 32082.540000;
+		value      	: 7.7294E-10;
 	}
 
 	pin (A) {
@@ -10285,23 +10285,23 @@ cell (NAND2_X1) {
 
 	area               	: 0.798000;
 
-	cell_leakage_power 	: 4962.289500;
+	cell_leakage_power 	: 1.2593E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 1017.833000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 1204.568000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 7340.627000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 10286.130000;
+		value      	: 1.2593E-08;
 	}
 
 	pin (A1) {
@@ -11942,23 +11942,23 @@ cell (NAND2_X2) {
 
 	area               	: 0.798000;
 
-	cell_leakage_power 	: 10335.129250;
+	cell_leakage_power 	: 1.2593E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 2118.898000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 2506.749000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 15292.590000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 21422.280000;
+		value      	: 1.2593E-08;
 	}
 
 	pin (A1) {
@@ -13599,23 +13599,23 @@ cell (NAND2_X4) {
 
 	area               	: 1.330000;
 
-	cell_leakage_power 	: 20670.405000;
+	cell_leakage_power 	: 1.2593E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 4237.981000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 5013.739000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 30585.350000;
+		value      	: 1.2593E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 42844.550000;
+		value      	: 1.2593E-08;
 	}
 
 	pin (A1) {
@@ -15256,23 +15256,23 @@ cell (NOR2_X1) {
 
 	area               	: 0.798000;
 
-	cell_leakage_power 	: 4344.791250;
+	cell_leakage_power 	: 1.1670E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 4007.568000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 4108.671000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 3399.124000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 5863.802000;
+		value      	: 1.1670E-08;
 	}
 
 	pin (A1) {
@@ -16913,23 +16913,23 @@ cell (NOR2_X2) {
 
 	area               	: 0.798000;
 
-	cell_leakage_power 	: 9198.896750;
+	cell_leakage_power 	: 1.1670E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 8512.084000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 8643.686000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 7184.727000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 12455.090000;
+		value      	: 1.1670E-08;
 	}
 
 	pin (A1) {
@@ -18570,23 +18570,23 @@ cell (NOR2_X4) {
 
 	area               	: 1.330000;
 
-	cell_leakage_power 	: 18884.310000;
+	cell_leakage_power 	: 1.1670E-08;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 17518.760000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 17650.290000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 14732.300000;
+		value      	: 1.1670E-08;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 25635.890000;
+		value      	: 1.1670E-08;
 	}
 
 	pin (A1) {
@@ -20227,23 +20227,23 @@ cell (OR2_X1) {
 
 	area               	: 1.064000;
 
-	cell_leakage_power 	: 6764.751250;
+	cell_leakage_power 	: 9.5058E-09;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 7698.874000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 6104.905000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 5395.301000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 7859.925000;
+		value      	: 9.5058E-09;
 	}
 
 	pin (A1) {
@@ -21884,23 +21884,23 @@ cell (OR2_X2) {
 
 	area               	: 1.064000;
 
-	cell_leakage_power 	: 9477.478500;
+	cell_leakage_power 	: 9.5058E-09;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 11815.320000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 8349.796000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 7640.148000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 10104.650000;
+		value      	: 9.5058E-09;
 	}
 
 	pin (A1) {
@@ -23541,23 +23541,23 @@ cell (OR2_X4) {
 
 	area               	: 1.064000;
 
-	cell_leakage_power 	: 14903.310000;
+	cell_leakage_power 	: 9.5058E-09;
 
 	leakage_power () {
 		when      	: "!A1 & !A2";
-		value      	: 20048.630000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "A1 & !A2";
-		value      	: 12840.010000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "!A1 & A2";
-		value      	: 12130.250000;
+		value      	: 9.5058E-09;
 	}
 	leakage_power () {
 		when      	: "A1 & A2";
-		value      	: 14594.350000;
+		value      	: 9.5058E-09;
 	}
 
 	pin (A1) {
@@ -25198,23 +25198,23 @@ cell (XOR2_X1) {
 
 	area               	: 1.596000;
 
-	cell_leakage_power 	: 11118.265500;
+	cell_leakage_power 	: 9.9794E-09;
 
 	leakage_power () {
 		when      	: "!A & !B";
-		value      	: 7436.641000;
+		value      	: 9.9794E-09;
 	}
 	leakage_power () {
 		when      	: "A & !B";
-		value      	: 7325.251000;
+		value      	: 9.9794E-09;
 	}
 	leakage_power () {
 		when      	: "!A & B";
-		value      	: 12751.340000;
+		value      	: 9.9794E-09;
 	}
 	leakage_power () {
 		when      	: "A & B";
-		value      	: 16959.830000;
+		value      	: 9.9794E-09;
 	}
 
 	pin (A) {
@@ -28427,23 +28427,23 @@ cell (XOR2_X2) {
 
 	area               	: 1.596000;
 
-	cell_leakage_power 	: 18502.467500;
+	cell_leakage_power 	: 9.9794E-09;
 
 	leakage_power () {
 		when      	: "!A & !B";
-		value      	: 11251.090000;
+		value      	: 9.9794E-09;
 	}
 	leakage_power () {
 		when      	: "A & !B";
-		value      	: 10888.180000;
+		value      	: 9.9794E-09;
 	}
 	leakage_power () {
 		when      	: "!A & B";
-		value      	: 22963.480000;
+		value      	: 9.9794E-09;
 	}
 	leakage_power () {
 		when      	: "A & B";
-		value      	: 28907.120000;
+		value      	: 9.9794E-09;
 	}
 
 	pin (A) {
