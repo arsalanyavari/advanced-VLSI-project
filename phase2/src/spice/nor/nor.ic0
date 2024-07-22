@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "17:16:18 07/22/2008 "
+* "rundate" "19:32:28 07/22/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\nor\nor.sp "
 * "runtitle" "* nor gate subcircuit"
 * time =    0.            
@@ -10,9 +10,9 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ in1 =   0.            
++ in1 = 900.0000m       
 + in2 =   0.            
-+ out = 899.6786m       
++ out = 177.4935u       
 + supply = 900.0000m       
-+ xnor.nodo1 = 899.7842m       
++ xnor.nodo1 = 125.4752m       
 ***   END: Saved Operating Point ***                     

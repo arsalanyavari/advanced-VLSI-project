@@ -179,13 +179,22 @@
 
  * simulation for delay and leakage power
  vdd supply ground 0.9
- vin1 in1 ground pulse(0 0.9 0 1n 1n 5n 10n)
- vin2 in2 ground pulse(0 0.9 5n 1n 1n 5n 10n)
+ * vin1 in1 ground pulse(0 0.9 0 1n 1n 5n 10n)
+ * vin2 in2 ground pulse(0 0.9 5n 1n 1n 5n 10n)
+
+ vin1 in1 ground 0
+ vin2 in2 ground 0
 
  .tran 0.1n 20n
  .measure tran tpdr trig v(in1) val=0.45 rise=1 targ v(out) val=0.45 rise=1
  .measure tran tpdf trig v(in1) val=0.45 fall=1 targ v(out) val=0.45 fall=1
  .measure tran tdelay param='(tpdr+tpdf)/2'
+ .measure trise
+ + trig v(out) val='0.2*0.9' rise=1
+ + targ v(out) val='0.8*0.9' rise=1
+ .measure tfall
+ + trig v(out) val='0.8*0.9' fall=1
+ + targ v(out) val='0.2*0.9' fall=1
  .measure tran iavg avg(i(vdd))
  .measure tran pleak param='iavg*0.9*-1'
  .end
@@ -767,14 +776,6 @@ Model Name: pmos
     TRD =      0 
  
 
-
- **warning** dc voltage reset to initial transient source value
-             in source        0:vin1                new dc=  0.0000D+00
-
-
- **warning** dc voltage reset to initial transient source value
-             in source        0:vin2                new dc=  0.0000D+00
-
  Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
 
  Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
@@ -813,11 +814,13 @@ Model Name: pmos
  * or gate subcircuit                                                           
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-   tpdr=  1.4502E-10  targ=  6.4502E-10   trig=  5.0000E-10
-   tpdf= failed       targ= not found    trig=  6.5000E-09
+   tpdr= failed                          trig= not found
+   tpdf= failed                          trig= not found
    tdelay= failed                         measure parameter failed
-   iavg= -8.6575E-07  from=  0.0000E+00     to=  2.0000E-08
-   pleak=  7.7917E-07
+   trise= failed                          trig= not found
+   tfall= failed                          trig= not found
+   iavg= -2.3326E-07  from=  0.0000E+00     to=  2.0000E-08
+   pleak=  2.0994E-07
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -835,15 +838,15 @@ Model Name: pmos
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1          10
-    transient          0.06         201         258          92 rev=         9
+    transient          0.12         201          48          24 rev=         0
     readin             0.01
     errchk             0.01
-    setup              0.00
+    setup              0.01
     output             0.00
-           total cpu time          0.10 seconds
+           total cpu time          0.17 seconds
            total elapsed time         1 seconds
-               job started at  17:17:01 07/22/2008
-               job ended   at  17:17:01 07/22/2008
+               job started at  18:38:23 07/22/2008
+               job ended   at  18:38:23 07/22/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

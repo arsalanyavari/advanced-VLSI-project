@@ -168,10 +168,19 @@
  vin1 in1 ground pulse(0 0.9 0 1n 1n 5n 10n)
  vin2 in2 ground pulse(0 0.9 5n 1n 1n 5n 10n)
 
+ * vin1 in1 ground 0
+ * vin2 in2 ground 0
+
  .tran 0.1n 20n
  .measure tran tpdr trig v(in1) val=0.45 rise=1 targ v(out) val=0.45 rise=1
  .measure tran tpdf trig v(in1) val=0.45 fall=1 targ v(out) val=0.45 fall=1
  .measure tran tdelay param='(tpdr+tpdf)/2'
+ .measure trise
+ + trig v(out) val='0.2*0.9' rise=1
+ + targ v(out) val='0.8*0.9' rise=1
+ .measure tfall
+ + trig v(out) val='0.8*0.9' fall=1
+ + targ v(out) val='0.2*0.9' fall=1
  .measure tran iavg avg(i(vdd))
  .measure tran pleak param='iavg*0.9*-1'
  .end
@@ -790,6 +799,8 @@ Model Name: pmos
    tpdr=  6.0355E-09  targ=  6.5355E-09   trig=  5.0000E-10
    tpdf= -1.0425E-09  targ=  5.4575E-09   trig=  6.5000E-09
    tdelay=  2.4965E-09
+   trise=  1.6121E-10  targ=  6.6029E-09   trig=  6.4417E-09
+   tfall=  1.2180E-10  targ=  5.5109E-09   trig=  5.3891E-09
    iavg= -2.9871E-06  from=  0.0000E+00     to=  2.0000E-08
    pleak=  2.6884E-06
 
@@ -808,16 +819,16 @@ Model Name: pmos
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.01           1          10
-    transient          0.06         201         308          99 rev=         5
+    op point           0.00           1          10
+    transient          0.12         201         308          99 rev=         5
     readin             0.01
     errchk             0.01
-    setup              0.00
+    setup              0.01
     output             0.00
-           total cpu time          0.11 seconds
+           total cpu time          0.18 seconds
            total elapsed time         1 seconds
-               job started at  17:15:39 07/22/2008
-               job ended   at  17:15:39 07/22/2008
+               job started at  18:47:15 07/22/2008
+               job ended   at  18:47:15 07/22/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

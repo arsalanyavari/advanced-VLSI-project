@@ -1,6 +1,8 @@
 $DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
 .TITLE '* or gate subcircuit'
- tpdr             tpdf             tdelay           iavg              
- pleak            temper           alter#            
-  1.450e-10          failed           failed        -8.657e-07        
-  7.792e-07         25.0000           1.0000         
+ tpdr             tpdf             tdelay           trise             
+ tfall            iavg             pleak            temper            
+ alter#            
+    failed           failed           failed           failed         
+    failed        -2.333e-07        2.099e-07         25.0000         
+    1.0000         

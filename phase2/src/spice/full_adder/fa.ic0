@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "17:14:00 07/22/2008 "
+* "rundate" "18:39:50 07/22/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\full_adder\fa.sp "
 * "runtitle" "* full adder subcircuit"
 * time =    0.            

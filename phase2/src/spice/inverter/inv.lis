@@ -164,11 +164,19 @@
  * simulation for delay and leakage power
  vdd supply ground 0.9
  vin in ground pulse(0 0.9 0 1n 1n 5n 10n)
+ * make the nmos transistor off for computing leakage power
+ * vin in ground 0
 
  .tran 0.1n 20n
  .measure tran tpdr trig v(in) val=0.45 rise=1 targ v(out) val=0.45 rise=1
  .measure tran tpdf trig v(in) val=0.45 fall=1 targ v(out) val=0.45 fall=1
  .measure tran tdelay param='(tpdr+tpdf)/2'
+ .measure trise
+ + trig v(out) val='0.2*0.9' rise=1
+ + targ v(out) val='0.8*0.9' rise=1
+ .measure tfall
+ + trig v(out) val='0.8*0.9' fall=1
+ + targ v(out) val='0.2*0.9' fall=1
  .measure tran iavg avg(i(vdd))
  .measure tran pleak param='iavg*0.9*-1'
 
@@ -781,6 +789,8 @@ Model Name: pmos
    tpdr=  6.0046E-09  targ=  6.5046E-09   trig=  5.0000E-10
    tpdf= -5.9952E-09  targ=  5.0477E-10   trig=  6.5000E-09
    tdelay=  4.6901E-12
+   trise=  1.5003E-10  targ=  6.5672E-09   trig=  6.4172E-09
+   tfall=  1.6309E-10  targ=  5.7425E-10   trig=  4.1116E-10
    iavg= -1.6674E-06  from=  0.0000E+00     to=  2.0000E-08
    pleak=  1.5007E-06
 
@@ -791,7 +801,7 @@ Model Name: pmos
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        159 kbytes
+           total memory used        160 kbytes
 
   # nodes =      12 # elements=       4
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       2
@@ -799,16 +809,16 @@ Model Name: pmos
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.00           1           5
-    transient          0.06         201         203          76 rev=         5
-    readin             0.00
+    op point           0.01           1           5
+    transient          0.10         201         203          76 rev=         5
+    readin             0.01
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.09 seconds
+           total cpu time          0.17 seconds
            total elapsed time         1 seconds
-               job started at  17:14:46 07/22/2008
-               job ended   at  17:14:46 07/22/2008
+               job started at  18:52:19 07/22/2008
+               job ended   at  18:52:19 07/22/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini
