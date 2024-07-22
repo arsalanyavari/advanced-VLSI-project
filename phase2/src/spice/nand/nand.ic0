@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "18:38:34 07/18/2008 "
-* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\nand\nand.sp "
+* "rundate" "17:15:39 07/22/2008 "
+* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\nand\nand.sp "
 * "runtitle" "* nand gate subcircuit"
 * time =    0.            
 * temperature =   25.0000        
@@ -12,7 +12,7 @@
 .nodeset
 + in1 =   0.            
 + in2 =   0.            
-+ out =  33.1855p       
-+ supply =  35.3264p       
-+ xnand.nodo1 =  16.4789p       
++ out = 899.9222m       
++ supply = 900.0000m       
++ xnand.nodo1 =  66.1823m       
 ***   END: Saved Operating Point ***                     

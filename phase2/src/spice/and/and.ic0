@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "18:38:19 07/18/2008 "
-* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\and\and.sp "
+* "rundate" "17:12:44 07/22/2008 "
+* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\and\and.sp "
 * "runtitle" "* and gate subcircuit"
 * time =    0.            
 * temperature =   25.0000        

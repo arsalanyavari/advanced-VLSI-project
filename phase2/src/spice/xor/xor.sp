@@ -1,7 +1,7 @@
 * XOR gate subcircuit
 
 .include ../45nm_MGK.pm
-.include ../../assets/spice_code/inv.sp
+.include ../../../assets/spice_code/inv.sp
 
 .SUBCKT XOR2 in1 in2 out supply ground
 Xinv1 in1 in1_n supply ground INV
@@ -28,5 +28,5 @@ Vin2 in2 ground PULSE(0 0.9 5n 1n 1n 5n 10n)
 .measure tran tpdf TRIG v(in1) VAL=0.45 FALL=1 TARG v(out) VAL=0.45 FALL=1
 .measure tran tdelay PARAM='(tpdr+tpdf)/2'
 .measure tran iavg AVG(I(Vdd))
-.measure tran pleak PARAM='iavg*0.9'
+.measure tran pleak PARAM='iavg*0.9*-1'
 .end

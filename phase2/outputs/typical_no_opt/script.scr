@@ -1,0 +1,52 @@
+set my_files [list /home/icic/Desktop/files/rca/one_bit_adder.v /home/icic/Desktop/files/rca/full_adder.v]
+set my_toplevel full_adder
+
+set my_clock_pin clk
+set my_clk_freq_MHz 100
+set my_input_delay_ns 0
+set my_output_delay_ns 0
+
+set link_library /home/icic/Desktop/libs/typical/typical.db
+set target_library /home/icic/Desktop/libs/typical/typical.db
+
+
+define_design_lib WORK -path /home/icic/Desktop/outputs2/typical_no_opt
+
+analyze -f verilog $my_files
+elaborate $my_toplevel
+current_design $my_toplevel
+link
+uniquify
+
+
+set_dont_touch $my_toplevel
+
+set my_period [expr 1000 / $my_clk_freq_MHz]
+set find_clock [ find port [list $my_clock_pin] ]
+if { $find_clock != [list] } {
+ set clk_name $my_clock_pin
+ create_clock -period $my_period $clk_name
+} else {
+ set clk_name vclk
+ create_clock -period $my_period -name $clk_name
+}
+
+set_input_delay $my_input_delay_ns [all_inputs]
+set_output_delay $my_output_delay_ns [all_outputs]
+
+
+
+compile
+check_design
+remove_unconnected_ports -blast_buses [find -hierarchy cell "*"]
+
+report_cell	> /home/icic/Desktop/outputs2/typical_no_opt/report_cell.txt
+report_port	> /home/icic/Desktop/outputs2/typical_no_opt/report_port.txt
+report_timing	> /home/icic/Desktop/outputs2/typical_no_opt/time_report.txt
+report_area 	> /home/icic/Desktop/outputs2/typical_no_opt/area.txt
+report_qor 	> /home/icic/Desktop/outputs2/typical_no_opt/qor.txt
+report_power	> /home/icic/Desktop/outputs2/typical_no_opt/power.txt
+
+write_sdf /home/icic/Desktop/outputs2/typical_no_opt/delay.sdf
+write_sdc /home/icic/Desktop/outputs2/typical_no_opt/sdc.sdc
+write -f verilog -output /home/icic/Desktop/outputs2/typical_no_opt/netlist.v -hierarchy

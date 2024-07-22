@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "18:35:54 07/18/2008 "
-* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\inverter\inv.sp "
+* "rundate" "17:14:46 07/22/2008 "
+* "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\inverter\inv.sp "
 * "runtitle" "* inverter subcircuit"
 * time =    0.            
 * temperature =   25.0000        

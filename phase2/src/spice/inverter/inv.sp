@@ -18,6 +18,6 @@ Vin in ground PULSE(0 0.9 0 1n 1n 5n 10n)
 .measure tran tpdf TRIG v(in) VAL=0.45 FALL=1 TARG v(out) VAL=0.45 FALL=1
 .measure tran tdelay PARAM='(tpdr+tpdf)/2'
 .measure tran iavg AVG(I(Vdd))
-.measure tran pleak PARAM='iavg*0.9'
+.measure tran pleak PARAM='iavg*0.9*-1'
 
 .end

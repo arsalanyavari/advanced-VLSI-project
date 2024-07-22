@@ -1,12 +1,12 @@
 * Full Adder subcircuit
 
 .include ../45nm_MGK.pm
-.include ../../assets/spice_code/xor.sp
-.include ../../assets/spice_code/and.sp
-.include ../../assets/spice_code/or.sp
-.include ../../assets/spice_code/inv.sp
-.include ../../assets/spice_code/nand.sp
-.include ../../assets/spice_code/nor.sp
+.include ../../../assets/spice_code/xor.sp
+.include ../../../assets/spice_code/and.sp
+.include ../../../assets/spice_code/or.sp
+.include ../../../assets/spice_code/inv.sp
+.include ../../../assets/spice_code/nand.sp
+.include ../../../assets/spice_code/nor.sp
 
 .SUBCKT FA cin in1 in2 cout soma supply ground
 Xxor1 in1 in2 in1xorin2 supply ground XOR2
@@ -29,5 +29,5 @@ Vin2 in2 ground PULSE(0 0.9 10n 1n 1n 5n 10n)
 .measure tran tpdf TRIG v(in1) VAL=0.45 FALL=1 TARG v(soma) VAL=0.45 FALL=1
 .measure tran tdelay PARAM='(tpdr+tpdf)/2'
 .measure tran iavg AVG(I(Vdd))
-.measure tran pleak PARAM='iavg*0.9'
+.measure tran pleak PARAM='iavg*0.9*-1'
 .end

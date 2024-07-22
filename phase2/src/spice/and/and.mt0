@@ -3,4 +3,4 @@ $DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
  tpdr             tpdf             tdelay           iavg              
  pleak            temper           alter#            
   4.967e-09        2.696e-11        2.497e-09       -3.447e-06        
- -3.102e-06         25.0000           1.0000         
+  3.102e-06         25.0000           1.0000         

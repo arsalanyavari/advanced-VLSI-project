@@ -153,7 +153,7 @@
  +rshg    = 0.1             gbmin   = 1e-012          rbpb    = 50              rbpd    = 50
  +rbps    = 50              rbdb    = 50              rbsb    = 50              ngcon   = 1
           
- .include ../../assets/spice_code/xor.sp
+ .include ../../../assets/spice_code/xor.sp
  * xor gate subcircuit
 
  .subckt xor2 in1 in2 out supply ground
@@ -168,28 +168,28 @@
  mn3 out in2 nodo4 ground nmos l=45n w=180n
  mn4 nodo4 in1 ground ground nmos l=45n w=180n
  .ends xor2
- .include ../../assets/spice_code/and.sp
+ .include ../../../assets/spice_code/and.sp
  * and gate subcircuit
 
  .subckt and2 in1 in2 out supply ground
  xnand1 in1 in2 nodo1 supply ground nand2
  xinv1 nodo1 out supply ground inv
  .ends and2
- .include ../../assets/spice_code/or.sp
+ .include ../../../assets/spice_code/or.sp
  * or gate subcircuit
 
  .subckt or2 in1 in2 out supply ground
  xnor1 in1 in2 nodo1 supply ground nor2
  xinv1 nodo1 out supply ground inv
  .ends or2
- .include ../../assets/spice_code/inv.sp
+ .include ../../../assets/spice_code/inv.sp
  * inverter subcircuit
 
  .subckt inv in out supply ground
  m1 out in supply supply pmos l=45n w=180n
  m2 out in ground ground nmos l=45n w=90n
  .ends inv
- .include ../../assets/spice_code/nand.sp
+ .include ../../../assets/spice_code/nand.sp
  * nand gate subcircuit
 
  .subckt nand2 in1 in2 out supply ground
@@ -198,7 +198,7 @@
  mn1 out in1 nodo1 ground nmos l=45n w=180n
  mn2 nodo1 in2 ground ground nmos l=45n w=180n
  .ends nand2
- .include ../../assets/spice_code/nor.sp
+ .include ../../../assets/spice_code/nor.sp
  * nor gate subcircuit
 
  .subckt nor2 in1 in2 out supply ground
@@ -229,7 +229,7 @@
  .measure tran tpdf trig v(in1) val=0.45 fall=1 targ v(soma) val=0.45 fall=1
  .measure tran tdelay param='(tpdr+tpdf)/2'
  .measure tran iavg avg(i(vdd))
- .measure tran pleak param='iavg*0.9'
+ .measure tran pleak param='iavg*0.9*-1'
  .end
 
  ***********************************************************************
@@ -975,7 +975,7 @@ Model Name: pmos
    tpdf= -5.9455E-09  targ=  5.5545E-09   trig=  1.1500E-08
    tdelay= -5.4524E-09
    iavg= -1.4433E-05  from=  0.0000E+00     to=  2.0000E-08
-   pleak= -1.2989E-05
+   pleak=  1.2989E-05
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -993,15 +993,15 @@ Model Name: pmos
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.03           1         185
-    transient          0.19         201         884         250 rev=        18
-    readin             0.01
+    transient          0.20         201         884         250 rev=        18
+    readin             0.03
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.27 seconds
+           total cpu time          0.31 seconds
            total elapsed time         1 seconds
-               job started at  18:47:00 07/18/2008
-               job ended   at  18:47:01 07/18/2008
+               job started at  17:14:00 07/22/2008
+               job ended   at  17:14:00 07/22/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

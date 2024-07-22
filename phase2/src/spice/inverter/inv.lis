@@ -170,7 +170,7 @@
  .measure tran tpdf trig v(in) val=0.45 fall=1 targ v(out) val=0.45 fall=1
  .measure tran tdelay param='(tpdr+tpdf)/2'
  .measure tran iavg avg(i(vdd))
- .measure tran pleak param='iavg*0.9'
+ .measure tran pleak param='iavg*0.9*-1'
 
  .end
 
@@ -782,7 +782,7 @@ Model Name: pmos
    tpdf= -5.9952E-09  targ=  5.0477E-10   trig=  6.5000E-09
    tdelay=  4.6901E-12
    iavg= -1.6674E-06  from=  0.0000E+00     to=  2.0000E-08
-   pleak= -1.5007E-06
+   pleak=  1.5007E-06
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -800,15 +800,15 @@ Model Name: pmos
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1           5
-    transient          0.10         201         203          76 rev=         5
-    readin             0.01
+    transient          0.06         201         203          76 rev=         5
+    readin             0.00
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.15 seconds
+           total cpu time          0.09 seconds
            total elapsed time         1 seconds
-               job started at  18:35:54 07/18/2008
-               job ended   at  18:35:54 07/18/2008
+               job started at  17:14:46 07/22/2008
+               job ended   at  17:14:46 07/22/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini
