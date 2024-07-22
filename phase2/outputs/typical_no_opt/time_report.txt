@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : full_adder
+Version: C-2009.06-SP5
+Date   : Fri Apr  4 04:04:52 2014
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: Sum[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  ripple_adder_gen[0].ADDER/B (one_bit_adder_7)           0.00       0.00 r
+  ripple_adder_gen[0].ADDER/U4/Z (XOR2_X2)                0.10       0.10 r
+  ripple_adder_gen[0].ADDER/U3/ZN (NAND2_X2)              0.03       0.13 f
+  ripple_adder_gen[0].ADDER/U2/ZN (NAND2_X2)              0.03       0.17 r
+  ripple_adder_gen[0].ADDER/Cout (one_bit_adder_7)        0.00       0.17 r
+  ripple_adder_gen[1].ADDER/Cin (one_bit_adder_6)         0.00       0.17 r
+  ripple_adder_gen[1].ADDER/U3/ZN (NAND2_X2)              0.03       0.19 f
+  ripple_adder_gen[1].ADDER/U2/ZN (NAND2_X2)              0.03       0.23 r
+  ripple_adder_gen[1].ADDER/Cout (one_bit_adder_6)        0.00       0.23 r
+  ripple_adder_gen[2].ADDER/Cin (one_bit_adder_5)         0.00       0.23 r
+  ripple_adder_gen[2].ADDER/U3/ZN (NAND2_X2)              0.03       0.25 f
+  ripple_adder_gen[2].ADDER/U2/ZN (NAND2_X2)              0.03       0.29 r
+  ripple_adder_gen[2].ADDER/Cout (one_bit_adder_5)        0.00       0.29 r
+  ripple_adder_gen[3].ADDER/Cin (one_bit_adder_4)         0.00       0.29 r
+  ripple_adder_gen[3].ADDER/U3/ZN (NAND2_X2)              0.03       0.31 f
+  ripple_adder_gen[3].ADDER/U2/ZN (NAND2_X2)              0.03       0.35 r
+  ripple_adder_gen[3].ADDER/Cout (one_bit_adder_4)        0.00       0.35 r
+  ripple_adder_gen[4].ADDER/Cin (one_bit_adder_3)         0.00       0.35 r
+  ripple_adder_gen[4].ADDER/U3/ZN (NAND2_X2)              0.03       0.37 f
+  ripple_adder_gen[4].ADDER/U2/ZN (NAND2_X2)              0.03       0.41 r
+  ripple_adder_gen[4].ADDER/Cout (one_bit_adder_3)        0.00       0.41 r
+  ripple_adder_gen[5].ADDER/Cin (one_bit_adder_2)         0.00       0.41 r
+  ripple_adder_gen[5].ADDER/U3/ZN (NAND2_X2)              0.03       0.43 f
+  ripple_adder_gen[5].ADDER/U2/ZN (NAND2_X2)              0.03       0.47 r
+  ripple_adder_gen[5].ADDER/Cout (one_bit_adder_2)        0.00       0.47 r
+  ripple_adder_gen[6].ADDER/Cin (one_bit_adder_1)         0.00       0.47 r
+  ripple_adder_gen[6].ADDER/U3/ZN (NAND2_X2)              0.03       0.49 f
+  ripple_adder_gen[6].ADDER/U2/ZN (NAND2_X2)              0.03       0.53 r
+  ripple_adder_gen[6].ADDER/Cout (one_bit_adder_1)        0.00       0.53 r
+  ripple_adder_gen[7].ADDER/Cin (one_bit_adder_0)         0.00       0.53 r
+  ripple_adder_gen[7].ADDER/U1/Z (XOR2_X2)                0.09       0.62 r
+  ripple_adder_gen[7].ADDER/Sum (one_bit_adder_0)         0.00       0.62 r
+  Sum[7] (out)                                            0.00       0.62 r
+  data arrival time                                                  0.62
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

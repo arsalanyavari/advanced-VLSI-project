@@ -6,8 +6,8 @@ set my_clk_freq_MHz 100
 set my_input_delay_ns 0
 set my_output_delay_ns 0
 
-set link_library /home/icic/Desktop/libs/typical/typical.db
-set target_library /home/icic/Desktop/libs/typical/typical.db
+set link_library /home/icic/Desktop/libs/typical_m/typical_m.db
+set target_library /home/icic/Desktop/libs/typical_m/typical_m.db
 
 
 define_design_lib WORK -path /home/icic/Desktop/outputs2/typical_no_opt
