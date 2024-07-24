@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "17:17:01 07/22/2008 "
+* "rundate" "18:38:23 07/22/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\or\or.sp "
 * "runtitle" "* or gate subcircuit"
 * time =    0.            

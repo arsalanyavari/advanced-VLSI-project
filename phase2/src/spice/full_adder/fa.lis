@@ -220,14 +220,24 @@
 
  * simulation for delay and leakage power
  vdd supply ground 0.9
- vcin cin ground pulse(0 0.9 0 1n 1n 5n 10n)
- vin1 in1 ground pulse(0 0.9 5n 1n 1n 5n 10n)
- vin2 in2 ground pulse(0 0.9 10n 1n 1n 5n 10n)
+ * vcin cin ground pulse(0 0.9 0 1n 1n 5n 10n)
+ * vin1 in1 ground pulse(0 0.9 5n 1n 1n 5n 10n)
+ * vin2 in2 ground pulse(0 0.9 10n 1n 1n 5n 10n)
+
+ vcin cin ground 0
+ vin1 in1 ground 0
+ vin2 in2 ground 0
 
  .tran 0.1n 20n
  .measure tran tpdr trig v(in1) val=0.45 rise=1 targ v(soma) val=0.45 rise=1
  .measure tran tpdf trig v(in1) val=0.45 fall=1 targ v(soma) val=0.45 fall=1
  .measure tran tdelay param='(tpdr+tpdf)/2'
+ .measure trise
+ + trig v(out) val='0.2*0.9' rise=1
+ + targ v(out) val='0.8*0.9' rise=1
+ .measure tfall
+ + trig v(out) val='0.8*0.9' fall=1
+ + targ v(out) val='0.2*0.9' fall=1
  .measure tran iavg avg(i(vdd))
  .measure tran pleak param='iavg*0.9*-1'
  .end
@@ -822,18 +832,6 @@ Model Name: pmos
     TRD =      0 
  
 
-
- **warning** dc voltage reset to initial transient source value
-             in source        0:vcin                new dc=  0.0000D+00
-
-
- **warning** dc voltage reset to initial transient source value
-             in source        0:vin1                new dc=  0.0000D+00
-
-
- **warning** dc voltage reset to initial transient source value
-             in source        0:vin2                new dc=  0.0000D+00
-
  Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
 
  Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1.8e-007 l=4.5e-008.
@@ -935,6 +933,10 @@ Model Name: pmos
  Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=3.6e-007 l=4.5e-008.
 
  Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=1.8e-007 l=4.5e-008.
+
+ **warning**  attempt to reference undefined node     0:out             
+  in the definition of v(out,0)
+   branch - output ignored
 
  
       
@@ -971,11 +973,17 @@ Model Name: pmos
  * full adder subcircuit                                                        
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-   tpdr= -4.9593E-09  targ=  5.4072E-10   trig=  5.5000E-09
-   tpdf= -5.9455E-09  targ=  5.5545E-09   trig=  1.1500E-08
-   tdelay= -5.4524E-09
-   iavg= -1.4433E-05  from=  0.0000E+00     to=  2.0000E-08
-   pleak=  1.2989E-05
+   tpdr= failed                          trig= not found
+   tpdf= failed                          trig= not found
+   tdelay= failed                         measure parameter failed
+
+ **warning**  trise= failed, trig source signal and targ source signal does not exist 
+
+
+ **warning**  tfall= failed, trig source signal and targ source signal does not exist 
+
+   iavg= -1.3137E-06  from=  0.0000E+00     to=  2.0000E-08
+   pleak=  1.1823E-06
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -984,7 +992,7 @@ Model Name: pmos
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        551 kbytes
+           total memory used        552 kbytes
 
   # nodes =     196 # elements=      46
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =      42
@@ -993,15 +1001,15 @@ Model Name: pmos
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.03           1         185
-    transient          0.20         201         884         250 rev=        18
-    readin             0.03
+    transient          0.09         201          48          24 rev=         0
+    readin             0.01
     errchk             0.01
     setup              0.01
     output             0.00
-           total cpu time          0.31 seconds
+           total cpu time          0.16 seconds
            total elapsed time         1 seconds
-               job started at  17:14:00 07/22/2008
-               job ended   at  17:14:00 07/22/2008
+               job started at  18:39:50 07/22/2008
+               job ended   at  18:39:50 07/22/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini
