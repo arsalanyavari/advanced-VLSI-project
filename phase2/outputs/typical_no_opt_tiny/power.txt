@@ -1,0 +1,39 @@
+Loading db file '/home/icic/Desktop/libs/typical_m/typical_m.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : full_adder
+Version: C-2009.06-SP5
+Date   : Fri Apr  4 04:04:07 2014
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_PDKv1_2_v2008_10 (File: /home/icic/Desktop/libs/typical_m/typical_m.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   2.5977 uW   (66%)
+  Net Switching Power  =   1.3388 uW   (34%)
+                         ---------
+Total Dynamic Power    =   3.9366 uW  (100%)
+
+Cell Leakage Power     =  11.0282 aW
+
+1

@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : full_adder
+Version: C-2009.06-SP5
+Date   : Fri Apr  4 04:04:06 2014
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: Cout (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  B[0] (in)                                               0.00       0.00 f
+  ripple_adder_gen[0].ADDER/B (one_bit_adder_7)           0.00       0.00 f
+  ripple_adder_gen[0].ADDER/U13/ZN (INV_X4)               0.01       0.01 r
+  ripple_adder_gen[0].ADDER/U9/ZN (NOR2_X2)               0.01       0.02 f
+  ripple_adder_gen[0].ADDER/U7/ZN (NOR2_X2)               0.06       0.08 r
+  ripple_adder_gen[0].ADDER/U6/ZN (NOR2_X2)               0.03       0.11 f
+  ripple_adder_gen[0].ADDER/U4/ZN (NOR2_X2)               0.04       0.14 r
+  ripple_adder_gen[0].ADDER/U11/ZN (INV_X4)               0.01       0.16 f
+  ripple_adder_gen[0].ADDER/Cout (one_bit_adder_7)        0.00       0.16 f
+  ripple_adder_gen[1].ADDER/Cin (one_bit_adder_6)         0.00       0.16 f
+  ripple_adder_gen[1].ADDER/U14/ZN (INV_X4)               0.02       0.17 r
+  ripple_adder_gen[1].ADDER/U6/ZN (NOR2_X2)               0.01       0.19 f
+  ripple_adder_gen[1].ADDER/U4/ZN (NOR2_X2)               0.04       0.22 r
+  ripple_adder_gen[1].ADDER/U11/ZN (INV_X4)               0.01       0.23 f
+  ripple_adder_gen[1].ADDER/Cout (one_bit_adder_6)        0.00       0.23 f
+  ripple_adder_gen[2].ADDER/Cin (one_bit_adder_5)         0.00       0.23 f
+  ripple_adder_gen[2].ADDER/U14/ZN (INV_X4)               0.02       0.25 r
+  ripple_adder_gen[2].ADDER/U6/ZN (NOR2_X2)               0.01       0.26 f
+  ripple_adder_gen[2].ADDER/U4/ZN (NOR2_X2)               0.04       0.30 r
+  ripple_adder_gen[2].ADDER/U11/ZN (INV_X4)               0.01       0.31 f
+  ripple_adder_gen[2].ADDER/Cout (one_bit_adder_5)        0.00       0.31 f
+  ripple_adder_gen[3].ADDER/Cin (one_bit_adder_4)         0.00       0.31 f
+  ripple_adder_gen[3].ADDER/U14/ZN (INV_X4)               0.02       0.33 r
+  ripple_adder_gen[3].ADDER/U6/ZN (NOR2_X2)               0.01       0.34 f
+  ripple_adder_gen[3].ADDER/U4/ZN (NOR2_X2)               0.04       0.38 r
+  ripple_adder_gen[3].ADDER/U11/ZN (INV_X4)               0.01       0.39 f
+  ripple_adder_gen[3].ADDER/Cout (one_bit_adder_4)        0.00       0.39 f
+  ripple_adder_gen[4].ADDER/Cin (one_bit_adder_3)         0.00       0.39 f
+  ripple_adder_gen[4].ADDER/U14/ZN (INV_X4)               0.02       0.40 r
+  ripple_adder_gen[4].ADDER/U6/ZN (NOR2_X2)               0.01       0.42 f
+  ripple_adder_gen[4].ADDER/U4/ZN (NOR2_X2)               0.04       0.45 r
+  ripple_adder_gen[4].ADDER/U11/ZN (INV_X4)               0.01       0.47 f
+  ripple_adder_gen[4].ADDER/Cout (one_bit_adder_3)        0.00       0.47 f
+  ripple_adder_gen[5].ADDER/Cin (one_bit_adder_2)         0.00       0.47 f
+  ripple_adder_gen[5].ADDER/U14/ZN (INV_X4)               0.02       0.48 r
+  ripple_adder_gen[5].ADDER/U6/ZN (NOR2_X2)               0.01       0.49 f
+  ripple_adder_gen[5].ADDER/U4/ZN (NOR2_X2)               0.04       0.53 r
+  ripple_adder_gen[5].ADDER/U11/ZN (INV_X4)               0.01       0.54 f
+  ripple_adder_gen[5].ADDER/Cout (one_bit_adder_2)        0.00       0.54 f
+  ripple_adder_gen[6].ADDER/Cin (one_bit_adder_1)         0.00       0.54 f
+  ripple_adder_gen[6].ADDER/U14/ZN (INV_X4)               0.02       0.56 r
+  ripple_adder_gen[6].ADDER/U6/ZN (NOR2_X2)               0.01       0.57 f
+  ripple_adder_gen[6].ADDER/U4/ZN (NOR2_X2)               0.04       0.61 r
+  ripple_adder_gen[6].ADDER/U11/ZN (INV_X4)               0.01       0.62 f
+  ripple_adder_gen[6].ADDER/Cout (one_bit_adder_1)        0.00       0.62 f
+  ripple_adder_gen[7].ADDER/Cin (one_bit_adder_0)         0.00       0.62 f
+  ripple_adder_gen[7].ADDER/U14/ZN (INV_X4)               0.02       0.64 r
+  ripple_adder_gen[7].ADDER/U6/ZN (NOR2_X2)               0.01       0.65 f
+  ripple_adder_gen[7].ADDER/U4/ZN (NOR2_X2)               0.04       0.68 r
+  ripple_adder_gen[7].ADDER/U11/ZN (INV_X4)               0.01       0.69 f
+  ripple_adder_gen[7].ADDER/Cout (one_bit_adder_0)        0.00       0.69 f
+  Cout (out)                                              0.00       0.69 f
+  data arrival time                                                  0.69
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

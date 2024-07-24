@@ -1,0 +1,29 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : cell
+Design : full_adder
+Version: C-2009.06-SP5
+Date   : Fri Apr  4 04:04:06 2014
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+ripple_adder_gen[0].ADDER one_bit_adder_7                 9.842000  h
+ripple_adder_gen[1].ADDER one_bit_adder_6                 9.842000  h
+ripple_adder_gen[2].ADDER one_bit_adder_5                 9.842000  h
+ripple_adder_gen[3].ADDER one_bit_adder_4                 9.842000  h
+ripple_adder_gen[4].ADDER one_bit_adder_3                 9.842000  h
+ripple_adder_gen[5].ADDER one_bit_adder_2                 9.842000  h
+ripple_adder_gen[6].ADDER one_bit_adder_1                 9.842000  h
+ripple_adder_gen[7].ADDER one_bit_adder_0                 9.842000  h
+--------------------------------------------------------------------------------
+Total 8 cells                                             78.735999
+1

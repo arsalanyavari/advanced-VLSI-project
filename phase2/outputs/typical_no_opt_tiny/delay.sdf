@@ -1,0 +1,1285 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "full_adder")
+(DATE "Fri Apr  4 04:04:07 2014")
+(VENDOR "NangateOpenCellLibrary_PDKv1_2_v2008_10")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "C-2009.06-SP5")
+(DIVIDER /)
+(VOLTAGE 1.10:1.10:1.10)
+(PROCESS "typical")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "full_adder")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U13/ZN ripple_adder_gen\[7\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[7] ripple_adder_gen\[7\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U12/ZN ripple_adder_gen\[7\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[7] ripple_adder_gen\[7\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U8/ZN ripple_adder_gen\[7\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U9/ZN ripple_adder_gen\[7\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U14/ZN ripple_adder_gen\[7\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U7/ZN ripple_adder_gen\[7\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U12/ZN ripple_adder_gen\[7\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U13/ZN ripple_adder_gen\[7\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U6/ZN ripple_adder_gen\[7\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U5/ZN ripple_adder_gen\[7\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U11/ZN ripple_adder_gen\[7\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[7] ripple_adder_gen\[7\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[7] ripple_adder_gen\[7\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U4/ZN ripple_adder_gen\[7\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U7/ZN ripple_adder_gen\[7\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U10/ZN ripple_adder_gen\[7\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U14/ZN ripple_adder_gen\[7\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U7/ZN ripple_adder_gen\[7\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U11/ZN ripple_adder_gen\[7\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U3/ZN ripple_adder_gen\[7\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[7\]\.ADDER/U2/ZN ripple_adder_gen\[7\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U13/ZN ripple_adder_gen\[6\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[6] ripple_adder_gen\[6\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U12/ZN ripple_adder_gen\[6\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[6] ripple_adder_gen\[6\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U8/ZN ripple_adder_gen\[6\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U9/ZN ripple_adder_gen\[6\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U14/ZN ripple_adder_gen\[6\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U7/ZN ripple_adder_gen\[6\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U12/ZN ripple_adder_gen\[6\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U13/ZN ripple_adder_gen\[6\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U6/ZN ripple_adder_gen\[6\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U5/ZN ripple_adder_gen\[6\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U11/ZN ripple_adder_gen\[6\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[6] ripple_adder_gen\[6\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[6] ripple_adder_gen\[6\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U4/ZN ripple_adder_gen\[6\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U7/ZN ripple_adder_gen\[6\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U10/ZN ripple_adder_gen\[6\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U14/ZN ripple_adder_gen\[6\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U7/ZN ripple_adder_gen\[6\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U11/ZN ripple_adder_gen\[6\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U3/ZN ripple_adder_gen\[6\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[6\]\.ADDER/U2/ZN ripple_adder_gen\[6\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U13/ZN ripple_adder_gen\[5\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[5] ripple_adder_gen\[5\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U12/ZN ripple_adder_gen\[5\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[5] ripple_adder_gen\[5\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U8/ZN ripple_adder_gen\[5\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U9/ZN ripple_adder_gen\[5\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U14/ZN ripple_adder_gen\[5\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U7/ZN ripple_adder_gen\[5\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U12/ZN ripple_adder_gen\[5\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U13/ZN ripple_adder_gen\[5\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U6/ZN ripple_adder_gen\[5\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U5/ZN ripple_adder_gen\[5\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U11/ZN ripple_adder_gen\[5\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[5] ripple_adder_gen\[5\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[5] ripple_adder_gen\[5\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U4/ZN ripple_adder_gen\[5\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U7/ZN ripple_adder_gen\[5\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U10/ZN ripple_adder_gen\[5\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U14/ZN ripple_adder_gen\[5\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U7/ZN ripple_adder_gen\[5\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U11/ZN ripple_adder_gen\[5\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U3/ZN ripple_adder_gen\[5\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[5\]\.ADDER/U2/ZN ripple_adder_gen\[5\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U13/ZN ripple_adder_gen\[4\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[4] ripple_adder_gen\[4\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U12/ZN ripple_adder_gen\[4\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[4] ripple_adder_gen\[4\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U8/ZN ripple_adder_gen\[4\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U9/ZN ripple_adder_gen\[4\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U14/ZN ripple_adder_gen\[4\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U7/ZN ripple_adder_gen\[4\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U12/ZN ripple_adder_gen\[4\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U13/ZN ripple_adder_gen\[4\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U6/ZN ripple_adder_gen\[4\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U5/ZN ripple_adder_gen\[4\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U11/ZN ripple_adder_gen\[4\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[4] ripple_adder_gen\[4\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[4] ripple_adder_gen\[4\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U4/ZN ripple_adder_gen\[4\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U7/ZN ripple_adder_gen\[4\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U10/ZN ripple_adder_gen\[4\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U14/ZN ripple_adder_gen\[4\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U7/ZN ripple_adder_gen\[4\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U11/ZN ripple_adder_gen\[4\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U3/ZN ripple_adder_gen\[4\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[4\]\.ADDER/U2/ZN ripple_adder_gen\[4\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U13/ZN ripple_adder_gen\[3\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[3] ripple_adder_gen\[3\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U12/ZN ripple_adder_gen\[3\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[3] ripple_adder_gen\[3\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U8/ZN ripple_adder_gen\[3\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U9/ZN ripple_adder_gen\[3\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U14/ZN ripple_adder_gen\[3\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U7/ZN ripple_adder_gen\[3\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U12/ZN ripple_adder_gen\[3\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U13/ZN ripple_adder_gen\[3\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U6/ZN ripple_adder_gen\[3\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U5/ZN ripple_adder_gen\[3\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U11/ZN ripple_adder_gen\[3\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[3] ripple_adder_gen\[3\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[3] ripple_adder_gen\[3\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U4/ZN ripple_adder_gen\[3\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U7/ZN ripple_adder_gen\[3\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U10/ZN ripple_adder_gen\[3\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U14/ZN ripple_adder_gen\[3\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U7/ZN ripple_adder_gen\[3\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U11/ZN ripple_adder_gen\[3\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U3/ZN ripple_adder_gen\[3\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[3\]\.ADDER/U2/ZN ripple_adder_gen\[3\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U13/ZN ripple_adder_gen\[2\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[2] ripple_adder_gen\[2\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U12/ZN ripple_adder_gen\[2\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[2] ripple_adder_gen\[2\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U8/ZN ripple_adder_gen\[2\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U9/ZN ripple_adder_gen\[2\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U14/ZN ripple_adder_gen\[2\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U7/ZN ripple_adder_gen\[2\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U12/ZN ripple_adder_gen\[2\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U13/ZN ripple_adder_gen\[2\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U6/ZN ripple_adder_gen\[2\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U5/ZN ripple_adder_gen\[2\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U11/ZN ripple_adder_gen\[2\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[2] ripple_adder_gen\[2\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[2] ripple_adder_gen\[2\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U4/ZN ripple_adder_gen\[2\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U7/ZN ripple_adder_gen\[2\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U10/ZN ripple_adder_gen\[2\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U14/ZN ripple_adder_gen\[2\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U7/ZN ripple_adder_gen\[2\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U11/ZN ripple_adder_gen\[2\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U3/ZN ripple_adder_gen\[2\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[2\]\.ADDER/U2/ZN ripple_adder_gen\[2\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U13/ZN ripple_adder_gen\[1\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[1] ripple_adder_gen\[1\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U12/ZN ripple_adder_gen\[1\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[1] ripple_adder_gen\[1\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U8/ZN ripple_adder_gen\[1\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U9/ZN ripple_adder_gen\[1\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U14/ZN ripple_adder_gen\[1\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U7/ZN ripple_adder_gen\[1\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U12/ZN ripple_adder_gen\[1\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U13/ZN ripple_adder_gen\[1\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U6/ZN ripple_adder_gen\[1\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U5/ZN ripple_adder_gen\[1\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U11/ZN ripple_adder_gen\[1\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[1] ripple_adder_gen\[1\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[1] ripple_adder_gen\[1\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U4/ZN ripple_adder_gen\[1\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U7/ZN ripple_adder_gen\[1\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U10/ZN ripple_adder_gen\[1\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U14/ZN ripple_adder_gen\[1\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U7/ZN ripple_adder_gen\[1\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U11/ZN ripple_adder_gen\[1\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U3/ZN ripple_adder_gen\[1\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[1\]\.ADDER/U2/ZN ripple_adder_gen\[1\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U13/ZN ripple_adder_gen\[0\]\.ADDER/U9/A1 (0.000:0.000:0.000))
+    (INTERCONNECT A[0] ripple_adder_gen\[0\]\.ADDER/U9/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U12/ZN ripple_adder_gen\[0\]\.ADDER/U8/A1 (0.000:0.000:0.000))
+    (INTERCONNECT B[0] ripple_adder_gen\[0\]\.ADDER/U8/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U8/ZN ripple_adder_gen\[0\]\.ADDER/U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U9/ZN ripple_adder_gen\[0\]\.ADDER/U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U14/ZN ripple_adder_gen\[0\]\.ADDER/U6/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U7/ZN ripple_adder_gen\[0\]\.ADDER/U6/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U12/ZN ripple_adder_gen\[0\]\.ADDER/U5/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U13/ZN ripple_adder_gen\[0\]\.ADDER/U5/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U6/ZN ripple_adder_gen\[0\]\.ADDER/U4/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U5/ZN ripple_adder_gen\[0\]\.ADDER/U4/A2 (0.000:0.000:0.000))
+    (INTERCONNECT Cin ripple_adder_gen\[0\]\.ADDER/U14/A (0.000:0.000:0.000))
+    (INTERCONNECT B[0] ripple_adder_gen\[0\]\.ADDER/U13/A (0.000:0.000:0.000))
+    (INTERCONNECT A[0] ripple_adder_gen\[0\]\.ADDER/U12/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U4/ZN ripple_adder_gen\[0\]\.ADDER/U11/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U7/ZN ripple_adder_gen\[0\]\.ADDER/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U10/ZN ripple_adder_gen\[0\]\.ADDER/U3/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U14/ZN ripple_adder_gen\[0\]\.ADDER/U3/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U7/ZN ripple_adder_gen\[0\]\.ADDER/U2/A1 (0.000:0.000:0.000))
+    (INTERCONNECT Cin ripple_adder_gen\[0\]\.ADDER/U2/A2 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U3/ZN ripple_adder_gen\[0\]\.ADDER/U1/A1 (0.000:0.000:0.000))
+    (INTERCONNECT ripple_adder_gen\[0\]\.ADDER/U2/ZN ripple_adder_gen\[0\]\.ADDER/U1/A2 (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.012:0.012) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[7\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[6\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[5\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[4\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[3\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[2\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.026:0.026:0.026) (0.013:0.013:0.013))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.032:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.016:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.028:0.028:0.028) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.030:0.030:0.030) (0.018:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[1\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.025:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.034:0.034:0.034) (0.012:0.012:0.012))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.047:0.048:0.048) (0.025:0.025:0.025))
+    (IOPATH A2 ZN (0.057:0.059:0.059) (0.030:0.030:0.030))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.041:0.042:0.042) (0.026:0.026:0.026))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.025:0.025:0.025) (0.012:0.012:0.012))
+    (IOPATH A2 ZN (0.036:0.036:0.036) (0.016:0.016:0.016))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.031:0.035:0.035) (0.019:0.019:0.019))
+    (IOPATH A2 ZN (0.042:0.044:0.044) (0.024:0.024:0.024))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U14)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.011:0.011:0.011) (0.007:0.007:0.007))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.018:0.019:0.019) (0.013:0.013:0.013))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INV_X4")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A ZN (0.015:0.016:0.016) (0.010:0.010:0.010))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.022:0.022:0.022) (0.014:0.014:0.014))
+    (IOPATH A2 ZN (0.027:0.027:0.027) (0.017:0.017:0.017))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.024:0.026:0.026) (0.021:0.021:0.021))
+    (IOPATH A2 ZN (0.025:0.025:0.025) (0.014:0.014:0.014))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NAND2_X2")
+  (INSTANCE ripple_adder_gen\[0\]\.ADDER/U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A1 ZN (0.016:0.016:0.016) (0.013:0.014:0.014))
+    (IOPATH A2 ZN (0.024:0.028:0.028) (0.016:0.018:0.018))
+    )
+  )
+)
+)
