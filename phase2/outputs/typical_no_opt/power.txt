@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : full_adder
 Version: C-2009.06-SP5
-Date   : Fri Apr  4 04:04:53 2014
+Date   : Fri Apr  4 04:04:23 2014
 ****************************************
 
 
@@ -34,6 +34,6 @@ Power-specific unit information :
                          ---------
 Total Dynamic Power    =   3.2085 uW  (100%)
 
-Cell Leakage Power     = 192.5360 aW
+Cell Leakage Power     =   8.2228 aW
 
 1

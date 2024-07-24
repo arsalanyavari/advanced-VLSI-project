@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version C-2009.06-SP5 for linux -- Jan 15, 2010
-#@ # Date:   Fri Apr  4 04:04:42 2014
+#@ # Date:   Fri Apr  4 04:04:26 2014
 #@ # Run by: icic@ICICVM.lab.edu
 #@ 
 
@@ -10148,4 +10148,3 @@ uplevel #0 source /home/icic/Desktop/outputs2/typical_no_opt/script.scr
 #@ write -f verilog -output /home/icic/Desktop/outputs2/typical_no_opt/netlist.v -hierarchy
 #@ # -- End source /home/icic/Desktop/outputs2/typical_no_opt/script.scr
 
-exit

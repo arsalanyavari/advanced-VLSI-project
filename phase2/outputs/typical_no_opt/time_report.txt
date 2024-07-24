@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : full_adder
 Version: C-2009.06-SP5
-Date   : Fri Apr  4 04:04:52 2014
+Date   : Fri Apr  4 04:04:23 2014
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
