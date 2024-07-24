@@ -1,0 +1,51 @@
+### SPICE Explorer session file (version 2007.1 build 0702) ###
+### saved at 13:26:05 on Wed Jul 24 2024 ###
+wdf 0 "D:\sharif courses\VLSI\project\booth algorithm\advanced-VLSI-project\phase2\src\spice\xor\xor.tr0" load=used 
+scalar list
+waveview_begin 1  stack  offset=0 name_b=81 mntr_b=81 geo=816:90:700:400 
+  panel_begin linear pidx=0 spath=true 
+    line src=wdf fidx=0 "name=0" disp=show 
+  panel_end
+  panel_begin linear pidx=1 spath=true 
+    line src=wdf fidx=0 "name=in1" disp=show 
+  panel_end
+  panel_begin linear pidx=2 spath=true 
+    line src=wdf fidx=0 "name=in2" disp=show 
+  panel_end
+  panel_begin linear pidx=3 spath=true 
+    line src=wdf fidx=0 "name=out" disp=show 
+  panel_end
+  panel_begin linear pidx=4 spath=true 
+    line src=wdf fidx=0 "name=supply" disp=show 
+  panel_end
+  panel_begin linear pidx=5 spath=true 
+    line src=wdf fidx=0 "name=xxor.in1_n" disp=show 
+  panel_end
+  panel_begin linear pidx=6 spath=true 
+    line src=wdf fidx=0 "name=xxor.in2_n" disp=show 
+  panel_end
+  panel_begin linear pidx=7 spath=true 
+    line src=wdf fidx=0 "name=xxor.nodo1" disp=show 
+  panel_end
+  panel_begin linear pidx=8 spath=true 
+    line src=wdf fidx=0 "name=xxor.nodo2" disp=show 
+  panel_end
+  panel_begin linear pidx=9 spath=true 
+    line src=wdf fidx=0 "name=xxor.nodo3" disp=show 
+  panel_end
+  panel_begin linear pidx=10 spath=true 
+    line src=wdf fidx=0 "name=xxor.nodo4" disp=show 
+  panel_end
+  panel_begin linear pidx=11 spath=true 
+    line src=wdf fidx=0 "name=I(vdd" disp=show 
+  panel_end
+  panel_begin linear pidx=12 spath=true 
+    line src=wdf fidx=0 "name=I(vin1" disp=show 
+  panel_end
+  panel_begin linear pidx=13 spath=true 
+    line src=wdf fidx=0 "name=I(vin2" disp=show 
+  panel_end
+  panel_begin linear pidx=14 spath=true 
+    line src=wdf fidx=0 "name=i(vdd" disp=show 
+  panel_end
+waveview_end

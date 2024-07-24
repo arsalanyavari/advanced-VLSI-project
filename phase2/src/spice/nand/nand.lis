@@ -820,15 +820,15 @@ Model Name: pmos
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1          10
-    transient          0.12         201         308          99 rev=         5
+    transient          0.07         201         308          99 rev=         5
     readin             0.01
-    errchk             0.01
-    setup              0.01
+    errchk             0.00
+    setup              0.00
     output             0.00
-           total cpu time          0.18 seconds
+           total cpu time          0.11 seconds
            total elapsed time         1 seconds
-               job started at  18:47:15 07/22/2008
-               job ended   at  18:47:15 07/22/2008
+               job started at  11:57:09 07/24/2008
+               job ended   at  11:57:09 07/24/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

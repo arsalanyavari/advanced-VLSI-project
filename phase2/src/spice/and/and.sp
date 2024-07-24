@@ -13,8 +13,8 @@ Xand in1 in2 out supply ground AND2
 
 * Simulation for delay and leakage power
 Vdd supply ground 0.9
-Vin1 in1 ground PULSE(0 0.9 0 1n 1n 5n 10n)
-Vin2 in2 ground PULSE(0 0.9 5n 1n 1n 5n 10n)
+Vin1 in1 ground PULSE(0.9 0 5n 0n 0n 5n 10n)
+Vin2 in2 ground PULSE(0 0.9 3n 0n 0n 3n 10n)
 
 * Vin1 in1 ground 0
 * Vin2 in2 ground 0

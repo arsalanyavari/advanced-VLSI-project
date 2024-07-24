@@ -179,11 +179,11 @@
 
  * simulation for delay and leakage power
  vdd supply ground 0.9
- * vin1 in1 ground pulse(0 0.9 0 1n 1n 5n 10n)
- * vin2 in2 ground pulse(0 0.9 5n 1n 1n 5n 10n)
+ vin1 in1 ground pulse(0.9 0 5n 0n 0n 3n 10n)
+ vin2 in2 ground pulse(0.9 0 3n 0n 0n 3n 10n)
 
- vin1 in1 ground 0
- vin2 in2 ground 0
+ * vin1 in1 ground 0
+ * vin2 in2 ground 0
 
  .tran 0.1n 20n
  .measure tran tpdr trig v(in1) val=0.45 rise=1 targ v(out) val=0.45 rise=1
@@ -776,6 +776,26 @@ Model Name: pmos
     TRD =      0 
  
 
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:vin1                new dc=  0.9000D+00
+
+
+ *** warning *** pulse rise time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse fall time is  < or = zero, reset to tstep
+
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:vin2                new dc=  0.9000D+00
+
+
+ *** warning *** pulse rise time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse fall time is  < or = zero, reset to tstep
+
  Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
 
  Warning: (B1 + Weff) may be too small in BSIM4 model nmos with w=9e-008 l=4.5e-008.
@@ -807,20 +827,20 @@ Model Name: pmos
  ***** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:in1     =   0.      0:in2     =   0.      0:out     = 123.7469u
- +0:supply  = 900.0000m 1:nodo1   = 899.6055m 2:nodo1   = 899.7476m
+ +0:in1     = 900.0000m 0:in2     = 900.0000m 0:out     = 899.8929m
+ +0:supply  = 900.0000m 1:nodo1   =  94.2038u 2:nodo1   = 840.2600m
 
  ******  
  * or gate subcircuit                                                           
   ******  transient analysis               tnom=  25.000 temp=  25.000          
  ******  
-   tpdr= failed                          trig= not found
-   tpdf= failed                          trig= not found
-   tdelay= failed                         measure parameter failed
-   trise= failed                          trig= not found
-   tfall= failed                          trig= not found
-   iavg= -2.3326E-07  from=  0.0000E+00     to=  2.0000E-08
-   pleak=  2.0994E-07
+   tpdr= -1.9845E-09  targ=  6.1655E-09   trig=  8.1500E-09
+   tpdf=  2.0323E-12  targ=  5.0520E-09   trig=  5.0500E-09
+   tdelay= -9.9123E-10
+   trise=  1.1234E-11  targ=  6.1704E-09   trig=  6.1591E-09
+   tfall=  2.0691E-11  targ=  5.0606E-09   trig=  5.0399E-09
+   iavg= -3.7936E-07  from=  0.0000E+00     to=  2.0000E-08
+   pleak=  3.4142E-07
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -837,16 +857,16 @@ Model Name: pmos
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.00           1          10
-    transient          0.12         201          48          24 rev=         0
-    readin             0.01
+    op point           0.01           1          16
+    transient          0.12         201         443         151 rev=        11
+    readin             0.00
     errchk             0.01
-    setup              0.01
+    setup              0.00
     output             0.00
            total cpu time          0.17 seconds
            total elapsed time         1 seconds
-               job started at  18:38:23 07/22/2008
-               job ended   at  18:38:23 07/22/2008
+               job started at  11:50:08 07/24/2008
+               job ended   at  11:50:09 07/24/2008
 
 
  Init: hspice initialization file: C:\Synopsys\Hspice_A-2008.03\hspice.ini

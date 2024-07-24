@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "18:43:10 07/22/2008 "
+* "rundate" "11:39:28 07/24/2008 "
 * "netlist" "d:\sharif courses\vlsi\project\booth algorithm\advanced-vlsi-project\phase2\src\spice\and\and.sp "
 * "runtitle" "* and gate subcircuit"
 * time =    0.            
@@ -10,10 +10,10 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ in1 =   0.            
++ in1 = 900.0000m       
 + in2 =   0.            
-+ out = 123.1004u       
++ out = 123.2943u       
 + supply = 900.0000m       
-+ xand.nodo1 = 899.8845m       
-+ xand.xnand1.nodo1 =  66.1798m       
++ xand.nodo1 = 899.8006m       
++ xand.xnand1.nodo1 = 747.1450m       
 ***   END: Saved Operating Point ***                     
