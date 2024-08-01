@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Sat Jun 28 09:00:19 2014
+Date   : Mon Jul 21 00:01:58 2014
 ****************************************
 
 
@@ -30,11 +30,11 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  =  16.3500 uW   (93%)
-  Net Switching Power  =   1.3055 uW    (7%)
+  Cell Internal Power  =  17.2267 uW   (90%)
+  Net Switching Power  =   1.8129 uW   (10%)
                          ---------
-Total Dynamic Power    =  17.6555 uW  (100%)
+Total Dynamic Power    =  19.0396 uW  (100%)
 
-Cell Leakage Power     =   1.3636 uW
+Cell Leakage Power     =   1.9945 uW
 
 1

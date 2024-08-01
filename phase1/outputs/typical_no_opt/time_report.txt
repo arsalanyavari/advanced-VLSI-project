@@ -6,14 +6,15 @@ Report : timing
         -max_paths 1
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Sat Jun 28 09:00:18 2014
+Date   : Mon Jul 21 00:01:58 2014
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
 Wire Load Model Mode: top
 
-  Startpoint: A_reg[1] (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: A_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: A_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: product_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
@@ -21,30 +22,31 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  A_reg[1]/CK (DFFR_X1)                    0.00       0.00 r
-  A_reg[1]/Q (DFFR_X1)                     0.23       0.23 f
-  U70/ZN (NOR2_X1)                         0.07       0.30 r
-  U53/ZN (AOI21_X1)                        0.06       0.36 f
-  U41/ZN (OR2_X1)                          0.09       0.45 f
-  U40/ZN (AOI22_X1)                        0.07       0.52 r
-  U39/Z (XOR2_X1)                          0.13       0.65 r
-  U33/ZN (AOI22_X1)                        0.04       0.69 f
-  U31/ZN (OAI22_X1)                        0.13       0.82 r
-  U5/ZN (INV_X1)                           0.03       0.85 f
-  U4/ZN (OAI22_X1)                         0.12       0.97 r
-  A_reg[2]/D (DFFR_X1)                     0.00       0.97 r
-  data arrival time                                   0.97
+  A_reg[0]/CK (DFFR_X1)                    0.00       0.00 r
+  A_reg[0]/Q (DFFR_X1)                     0.26       0.26 f
+  U85/ZN (NAND2_X2)                        0.05       0.31 r
+  U86/ZN (INV_X4)                          0.01       0.32 f
+  add_30/U1_1/CO (FA_X1)                   0.13       0.45 f
+  add_30/U1_2/CO (FA_X1)                   0.14       0.59 f
+  add_30/U1_3/S (FA_X1)                    0.15       0.74 f
+  U44/ZN (AOI222_X1)                       0.21       0.95 r
+  U43/ZN (INV_X1)                          0.04       1.00 f
+  U31/ZN (AOI22_X1)                        0.10       1.10 r
+  U30/ZN (INV_X1)                          0.02       1.12 f
+  U73/Z (MUX2_X2)                          0.15       1.27 f
+  product_reg[6]/D (DFFR_X1)               0.00       1.27 f
+  data arrival time                                   1.27
 
   clock clk (rise edge)                   10.00      10.00
   clock network delay (ideal)              0.00      10.00
-  A_reg[2]/CK (DFFR_X1)                    0.00      10.00 r
+  product_reg[6]/CK (DFFR_X1)              0.00      10.00 r
   library setup time                      -0.10       9.90
   data required time                                  9.90
   -----------------------------------------------------------
   data required time                                  9.90
-  data arrival time                                  -0.97
+  data arrival time                                  -1.27
   -----------------------------------------------------------
-  slack (MET)                                         8.93
+  slack (MET)                                         8.63
 
 
 1

@@ -4,7 +4,7 @@ Information: Updating design information... (UID-85)
 Report : cell
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Fri Jun 27 05:36:55 2014
+Date   : Sun Jul 20 23:29:26 2014
 ****************************************
 
 Attributes:

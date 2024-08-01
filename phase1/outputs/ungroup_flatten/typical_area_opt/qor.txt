@@ -3,7 +3,7 @@
 Report : qor
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Sat Jun 28 09:55:34 2014
+Date   : Sun Jul 20 00:44:46 2014
 ****************************************
 
 
@@ -53,9 +53,9 @@ Date   : Sat Jun 28 09:55:34 2014
   Compile CPU Statistics
   -----------------------------------
   Resource Sharing:              0.01
-  Logic Optimization:            0.09
-  Mapping Optimization:          0.08
+  Logic Optimization:            0.08
+  Mapping Optimization:          0.07
   -----------------------------------
-  Overall Compile Time:          0.51
+  Overall Compile Time:          0.50
 
 1

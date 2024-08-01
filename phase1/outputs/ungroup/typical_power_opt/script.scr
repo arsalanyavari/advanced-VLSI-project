@@ -15,10 +15,10 @@ define_design_lib WORK -path /home/icic/Desktop/outputs/ungroup/typical_power_op
 analyze -f verilog $my_files
 elaborate $my_toplevel
 current_design $my_toplevel
-ungroup -all -all_instances
 link
 uniquify
 
+ungroup -all
 set_max_dynamic_power 0
 set_max_leakage_power 0
 

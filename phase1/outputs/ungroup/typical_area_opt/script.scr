@@ -15,11 +15,10 @@ define_design_lib WORK -path /home/icic/Desktop/outputs/ungroup/typical_area_opt
 analyze -f verilog $my_files
 elaborate $my_toplevel
 current_design $my_toplevel
-ungroup -all -all_instances
 link
 uniquify
 
-
+ungroup -all_instances
 set_max_area 0
 
 set my_period [expr 1000 / $my_clk_freq_MHz]

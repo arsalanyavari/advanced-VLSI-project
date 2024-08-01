@@ -19,7 +19,6 @@ link
 uniquify
 
 set_max_dynamic_power 0
-set_max_leakage_power 0
 
 set my_period [expr 1000 / $my_clk_freq_MHz]
 set find_clock [ find port [list $my_clock_pin] ]

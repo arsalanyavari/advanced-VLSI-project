@@ -19,7 +19,7 @@ link
 uniquify
 
 
-set_optimization_effort 0
+set_dont_touch $my_toplevel
 
 set my_period [expr 1000 / $my_clk_freq_MHz]
 set find_clock [ find port [list $my_clock_pin] ]

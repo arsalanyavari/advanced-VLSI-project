@@ -3,7 +3,7 @@
 Report : area
 Design : booth_multiplier
 Version: C-2009.06-SP5
-Date   : Sat Jun 28 09:55:34 2014
+Date   : Sun Jul 20 00:44:46 2014
 ****************************************
 
 Library(s) Used:

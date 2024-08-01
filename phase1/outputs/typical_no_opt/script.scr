@@ -36,7 +36,7 @@ set_output_delay $my_output_delay_ns [all_outputs]
 
 
 
-compile
+compile -only_hold_time
 check_design
 remove_unconnected_ports -blast_buses [find -hierarchy cell "*"]
 

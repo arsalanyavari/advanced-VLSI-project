@@ -15,11 +15,12 @@ define_design_lib WORK -path /home/icic/Desktop/outputs/ungroup/typical_no_opt
 analyze -f verilog $my_files
 elaborate $my_toplevel
 current_design $my_toplevel
-ungroup -all -all_instances
 link
 uniquify
 
 set_dont_touch $my_toplevel
+ungroup -all -flatten false
+
 
 set my_period [expr 1000 / $my_clk_freq_MHz]
 set find_clock [ find port [list $my_clock_pin] ]

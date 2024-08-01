@@ -1,0 +1,177 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : cell
+Design : booth_multiplier
+Version: C-2009.06-SP5
+Date   : Mon Jul 21 00:58:48 2014
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+A_reg[0]                  DFFR_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+A_reg[1]                  DFFR_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+M_reg[0]                  DLH_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.926000  n
+M_reg[1]                  DLH_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.926000  n
+M_reg[2]                  DLH_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.926000  n
+M_reg[3]                  DLH_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.926000  n
+Q_1_reg                   DFFR_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+Q_reg[0]                  SDFFRS_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          9.310000  n
+Q_reg[1]                  SDFFRS_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          9.310000  n
+Q_reg[2]                  SDFFRS_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          9.310000  n
+Q_reg[3]                  SDFFRS_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          9.310000  n
+U11                       INV_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U14                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U16                       INV_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U17                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U19                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U20                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U23                       INV_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U24                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U25                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U34                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U35                       AOI211_X2       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U36                       OAI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U37                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U38                       XNOR2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.596000  
+U39                       AOI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U40                       OAI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U41                       AOI222_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.128000  
+U42                       AOI222_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.128000  
+U43                       NOR2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U44                       AOI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U47                       AOI222_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.128000  
+U50                       AOI222_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          2.128000  
+U51                       AOI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U52                       AOI211_X2       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U53                       AOI221_X2       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.596000  
+U55                       AOI221_X2       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.596000  
+U56                       AOI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U57                       AOI221_X2       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.596000  
+U58                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U59                       AOI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U60                       NOR2_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U61                       NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U62                       NOR2_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U63                       AOI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U64                       OR2_X2          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U65                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U66                       AOI22_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U67                       NOR2_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U71                       NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U72                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U73                       MUX2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.862000  
+U74                       NOR2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U75                       AOI211_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U76                       NOR2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U77                       AOI211_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U78                       AOI211_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U79                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.532000  
+U80                       NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U81                       NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U82                       NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U83                       NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          0.798000  
+U84                       OR3_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.330000  
+U85                       OR2_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U86                       OR2_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U87                       OR2_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+U88                       OR2_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          1.064000  
+count_reg[0]              DFFR_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+count_reg[1]              DFFR_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+count_reg[2]              DFFS_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+done_reg                  DFFR_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+product_reg[0]            SDFFR_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          6.916000  n
+product_reg[1]            SDFFR_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          6.916000  n
+product_reg[2]            SDFFR_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          6.916000  n
+product_reg[3]            SDFFS_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          7.182000  n
+product_reg[4]            SDFFS_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          7.182000  n
+product_reg[5]            SDFFS_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          7.182000  n
+product_reg[6]            DFFR_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                          5.586000  n
+--------------------------------------------------------------------------------
+Total 78 cells                                            197.638002
+1
