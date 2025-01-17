@@ -8,7 +8,7 @@ Instruction:
 Our Report:
 [Phase1 report PDF](phase1/Phase1_Advanced_VLSI_project_report.pdf)
 
-### Phase1:
+### Phase2:
 Instruction:
 [Phase2 instructions PDF](phase2/Adv_VLSI_Project_Phase_2_1402_2.pdf)
 
@@ -29,7 +29,7 @@ Phase1:
 - The `assets` directory contains sample script for design-compiler (each script for different scenarios  is located in the respective result directory within the `outputs` directory).
 - The `outputs` directory contains our results for different scenarios.
 
-Phase1:
+Phase2:
 - The `src` directory contains verilog code of this phase and spice code for Ripple Carry Adder.
 - The `assets` directory contains spice codes for gates needed for Ripple Carry Adder and modified library of 45nm with our power leakage measures.
 - The `outputs` directory contains our results.
